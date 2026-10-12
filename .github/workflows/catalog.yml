@@ -1,0 +1,107 @@
+name: Update catalog
+
+on:
+  schedule:
+    # Every 6 hours: refresh recently updated resources.
+    - cron: "15 */6 * * *"
+    # Weekly full sweep. The event payload keeps this distinct even if the job starts late.
+    - cron: "45 5 * * 1"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: incremental updates recent pages; full walks every category
+        type: choice
+        options:
+          - incremental
+          - full
+        default: incremental
+  pull_request:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-catalog
+  cancel-in-progress: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+      - run: pip install -r requirements.txt
+      - run: python -m unittest discover -s tests -v
+
+  update:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - name: Checkout pipeline
+        uses: actions/checkout@v4
+        with:
+          path: pipeline
+
+      - name: Checkout published catalog
+        uses: actions/checkout@v4
+        with:
+          ref: catalog
+          path: published
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pipeline/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Choose mode
+        id: mode
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          EVENT_SCHEDULE: ${{ github.event.schedule }}
+          INPUT_MODE: ${{ github.event.inputs.mode }}
+        run: |
+          mode=incremental
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            case "$INPUT_MODE" in
+              full|incremental) mode="$INPUT_MODE" ;;
+            esac
+          elif [ "$EVENT_SCHEDULE" = "45 5 * * 1" ]; then
+            mode=full
+          fi
+          echo "mode=$mode" >> "$GITHUB_OUTPUT"
+
+      - name: Update catalog
+        working-directory: pipeline
+        env:
+          CATALOG_MAX_SECONDS: "16200"
+        run: python -m beamng_catalog update --catalog-dir "$GITHUB_WORKSPACE/published" --seed "$GITHUB_WORKSPACE/pipeline/seed/catalog.json.gz" --mode "${{ steps.mode.outputs.mode }}"
+
+      - name: Publish catalog branch
+        working-directory: published
+        env:
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898283+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898283+github-actions[bot]@users.noreply.github.com
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "catalog: no changes to publish"
+            exit 0
+          fi
+          git commit -m "Update mod catalog"
+          git push origin HEAD:catalog

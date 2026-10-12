@@ -1,0 +1,2609 @@
+
+
+
+
+<!DOCTYPE html>
+<html id="XenForo" lang="en-US" dir="LTR" class="Public NoJs LoggedOut Sidebar  Responsive hasTabLinks hasSearch navStyle_0 pageStyle_1 hasFlexbox" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	
+		<base href="https://www.beamng.com/" />
+		<script>
+			var _b = document.getElementsByTagName('base')[0], _bH = "https://www.beamng.com/";
+			if (_b && _b.href != _bH) _b.href = _bH;
+		</script>
+	
+
+	<title>Beta - Tyrelabs | BeamNG</title>
+	
+	<noscript><style>.JsOnly, .jsOnly { display: none !important; }</style></noscript>
+	<link rel="stylesheet" href="css.php?css=xenforo,form,public&amp;style=3&amp;dir=LTR&amp;d=1791462974" />
+	
+	<link rel="stylesheet" href="css.php?css=bb_code,login_bar,message_simple,moderator_bar,nat_public_css,notices,panel_scroller,rating,resource_review,resource_update,resource_view,resource_view_header,resource_view_tabs&amp;style=3&amp;dir=LTR&amp;d=1791462974" />
+
+	
+	<link rel="stylesheet" href="css.php?css=uix,uix_style&amp;style=3&amp;dir=LTR&amp;d=1791462974" />
+	
+	<style>
+/* User specific styling */
+
+	
+		.pageWidth {
+			
+				max-width: 94%;
+			
+		}
+	
+	
+		.Menu.uix_megaMenu
+		{
+			
+				max-width: 94%;
+			
+		}
+		
+		
+		
+	
+	
+	
+	
+	
+	
+		
+			
+			
+			
+			
+			
+		
+	
+	
+	
+		
+		
+
+</style>
+	
+	<link rel="stylesheet" href="css.php?css=EXTRA&amp;style=3&amp;dir=LTR&amp;d=1791462974" />
+
+	
+	
+	<style>
+/* Node Styling */
+.node.node_4 > .nodeInfo {}.node.node_5 > .nodeInfo {}.node.node_10 > .nodeInfo {}.node.node_13 > .nodeInfo {}.node.node_15 > .nodeInfo {background:rgba(0, 0, 0, 0.05);}.node.node_17 > .nodeInfo {}.node.node_23 > .nodeInfo {}.node.node_25 > .nodeInfo {}.node.node_26 > .nodeInfo {}.node.node_27 > .nodeInfo {}.node.node_28 > .nodeInfo {}.node.node_29 > .nodeInfo {}.node.node_30 > .nodeInfo {}.node.node_39 > .nodeInfo {}.node.node_40 > .nodeInfo {}.node.node_41 > .nodeInfo {}.node.node_42 > .nodeInfo {}.node.node_43 > .nodeInfo {}.node.node_44 > .nodeInfo {}.node.node_45 > .nodeInfo {}.node.node_46 > .nodeInfo {}.node.node_47 > .nodeInfo {}.node.node_48 > .nodeInfo {}.node.node_49 > .nodeInfo {}.node.node_135 > .nodeInfo {}.node.node_170 > .nodeInfo {}.node.node_183 > .nodeInfo {}.node.node_257 > .nodeInfo {}.node.node_579 > .nodeInfo {}.node.node_580 > .nodeInfo {}.node.node_584 > .nodeInfo {}.node.node_585 > .nodeInfo {}.node.node_589 > .nodeInfo {}.node.node_590 > .nodeInfo {}.node.node_591 > .nodeInfo {}.node.node_592 > .nodeInfo {}
+</style>
+
+	
+
+	
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="styles/uix/uix/css/font-awesome.min.css" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700|Lato:400,700' rel='stylesheet' type='text/css'>
+
+
+<script src="js/jquery/jquery-1.11.0.min.js"></script>	
+
+
+	
+<script src="js/xenforo/xenforo.js?_v=7ade89d5"></script>
+
+
+
+
+
+<script>
+	uix = {
+		elm: {},
+		fn:{},
+		init: function(){
+			if (uix.betaMode) {
+				console.group('uix.%cinit()', 'color:#3498DB');
+			}
+			for(var x=0;x<uix.events.init.length;x++){
+				uix.events.init[x]()
+		  	}
+		  	console.groupEnd('uix.%cinit()','color:#3498DB')
+		},
+	  	events: {init:[]},
+	  	on: function(event, fn){
+	  		if(event=='init'){
+	  			uix.events.init.push(fn)
+	  		}
+	  	},
+	  
+		betaMode				: parseInt('0'),
+		jsPathUsed				: 'uix_style',
+		jsGlobal				: parseInt('0'),
+		
+	  
+	  	version					: '1.5.0.1',
+	  	jsHeadVersion				: '1.5.0.1',
+	  	addonVersion				: '1000572',
+	  	contentTemplate				: 'resource_description',
+	  
+		globalPadding 				: parseInt('12px'),
+		sidebarWidth				: parseInt('250px'),
+		mainContainerMargin  	        	: '262px',
+		maxResponsiveWideWidth   		: parseInt('800px'),
+		maxResponsiveMediumWidth 		: parseInt('610px'),
+		maxResponsiveNarrowWidth 		: parseInt('480px'),
+		sidebarMaxResponsiveWidth		: parseInt('800px'),
+		
+			responsiveMessageBreakpoint		: parseInt('610px'),
+		
+		sidebarMaxResponsiveWidthStr		: '800px',
+		
+			offCanvasTriggerWidth		: parseInt('800px'),
+		
+	  
+		jumpToFixedDelayHide			: parseInt('0'),
+	  
+		stickyNavigationMinWidth 		: parseInt('0'),
+		stickyNavigationMinHeight		: parseInt('600'),
+		stickyNavigationMaxWidth 		: parseInt('0'),
+		stickyNavigationMaxHeight		: parseInt('0'),
+		stickyNavigationPortraitMinWidth 	: parseInt('320'),
+		stickyNavigationPortraitMinHeight	: parseInt('500'),
+		stickyNavigationPortraitMaxWidth 	: parseInt('0'),
+		stickyNavigationPortraitMaxHeight	: parseInt('0'),
+		stickySidebar 				: 1,
+		
+			sidebarInnerFloat 		: "left",
+		
+		RTL					: 0,
+		stickyItems 				: {},
+		stickyGlobalMinimumPosition		: parseInt('200px'),
+		stickyGlobalScrollUp			: parseInt('0'),
+		stickyDisableIOSThirdParty		: parseInt('1'),
+		
+		searchMinimalSize			: parseInt('610px'),
+		
+		searchPosition				: parseInt('2'),
+		
+		nodeStyle				: parseInt('0'),
+		pageStyle				: parseInt('1'),
+		
+		enableBorderCheck			: parseInt('1'),
+		enableULManager				: parseInt('1'),
+		
+		threadSlidingAvatar			: parseInt('0'),
+		threadSlidingExtra			: parseInt('0'),
+		threadSlidingHover			: parseInt('0'),
+		threadSlidingStaffShow			: parseInt('0'),
+		threadSlidingGlobalEnable		: parseInt('1'),
+		
+		signatureHidingEnabled			: parseInt('1'),
+		signatureHidingEnabledAddon		: parseInt('1'),
+		signatureMaxHeight			: parseInt('60px'),
+		signatureHoverEnabled			: parseInt('0'),
+		
+		enableStickyFooter 			: parseInt('1'),
+		stickyFooterBottomOffset 		: parseInt('12px') * 2,
+		
+		
+			sidebarStickyBottomOffset	: parseInt(0),
+		
+	  
+	  	
+			offCanvasSidebar			: 1,
+
+			
+				offCanvasSidebarVisitorTabs		: 1,
+			
+		
+		
+	  
+		reinsertWelcomeBlock			: parseInt('0'),
+	  
+		sidebarCookieExpire			: '',
+		canCollapseSidebar			: '',
+		
+		cookiePrefix				: 'xf_',
+		sidebarLocation 			: parseInt('1'),
+		
+		collapsibleSidebar			: parseInt('0'),
+		collapsedNodesDefault			: '',
+		widthToggleUpper			: '94%',
+		widthToggleLower			: '80%',
+		
+			toggleWidthEnabled		: parseInt('1'),
+		
+		collapsibleNodes			: parseInt('0'),
+		collapsibleSticky			: parseInt('1'),
+		ajaxWidthToggleLink			: 'uix/toggle-width',
+		ajaxStickyThreadToggleLink		: 'uix/toggle-sticky-threads',
+		ajaxStickyThreadExpandLink		: 'uix/expand-sticky-threads',
+		ajaxStickyThreadCollapseLink		: 'uix/collapse-sticky-threads',
+		ajaxSidebarToggleLink			: 'uix/toggle-sidebar',
+		
+		user					: {
+								'themeName'		: 'BeamNG - UI.X',
+								'-themeParents'		: '3,2,0',
+								'-themeModified'	: '1791462974',
+								'-themeSelectable'	: '1',
+								languageName		: 'English (US)',
+								stickyEnableUserbar	: (parseInt('') == parseInt('')) ? parseInt('') : true,
+								stickyEnableNav		: (parseInt('') == parseInt('')) ? parseInt('') : true,
+								stickyEnableSidebar	: (parseInt('') == parseInt('')) ? parseInt('') : true,
+								widthToggleState	: (parseInt('') == parseInt('')) ? parseInt('') : parseInt('1'),
+								stickyThreadsState	: (parseInt('') == parseInt('')) ? (parseInt('') > 0) : 0,
+								
+									sidebarState	: 0,
+								
+								
+									collapseUserInfo : 1,
+								
+								
+									signatureHiding : 1,
+								
+							}
+	};
+	
+	if(uix.stickyNavigationMaxWidth == 0){uix.stickyNavigationMaxWidth = 999999}
+	if(uix.stickyNavigationMaxHeight == 0){uix.stickyNavigationMaxHeight = 999999}
+	if(uix.stickyNavigationPortraitMaxWidth == 0){uix.stickyNavigationPortraitMaxWidth = 999999}
+	if(uix.stickyNavigationPortraitMaxHeight == 0){uix.stickyNavigationPortraitMaxHeight = 999999}
+	
+	
+		uix.stickyItems['#navigation'] = {normalHeight:parseInt('50'), stickyHeight:parseInt('32')}
+		
+		var subElement = null;
+		
+			//if tablinks are visible
+			uix.stickyItems['#navigation'].options = {subElement: '#navigation .tabLinks', subNormalHeight: parseInt('41'), subStickyHeight: parseInt('40'), subStickyHide: 1 == 1 , scrollSticky: uix.stickyGlobalScrollUp }
+		
+		
+	
+	
+	
+	$(document).ready(function() {
+		if ( $('#userBar').length ) {
+			uix.stickyItems['#userBar']= {normalHeight:parseInt('32'), stickyHeight:parseInt('32')}
+			
+			uix.stickyItems['#userBar'].options = {scrollSticky: uix.stickyGlobalScrollUp }
+		}
+	});
+	
+	
+	$(document).ready(function(){
+	
+	//put jquery code here
+	
+
+});
+	
+	uix.debug = function() {
+		result = "\n\n############============   Begin Copying Here   ============############\n\n";
+		result += "Error: the functions file was not found.";
+		result += "\n\n############============   End Copying Here   ============############\n\n";
+
+		console.log(result);
+	}
+
+</script>
+
+<script src="js/audentio/uix_style/functions.min.js?_v=7ade89d5_1.5.0.1"></script>
+
+<script>
+	uix.adminJsError = function(errMsg) {
+		console.error(errMsg);
+		
+		
+	}
+	
+	uix.fixJsVisibility = function() {
+		var userBar = $('.hasJs #userBar');
+		var nodeList = $('.hasJs #forums, .hasJs .category_view .nodeList, .hasJs .watch_forums .nodeList');
+		if (userBar.length) userBar.css('display', 'block');
+		if (nodeList.length) nodeList.css('visibility', 'visible');
+	}
+	
+	uix.catchJsError = function(err) {
+		console.log("\n\n############============   Begin Copying Here   ============############\n\n")
+		var errMsg = "Uh Oh!  It looks like there's an error in your page's javascript.  There will likely be significant issues with the use of the forum until this is corrected.  If you are unable to resolve this and believe it is due to a bug in your Audentio Design theme, contact Audentio support and include a copy of the text between the designated areas from your javascript console.  This is the error: \n\n" + err ;
+		uix.fixJsVisibility();	
+		uix.adminJsError(errMsg);
+		console.log("\n\n");
+		console.log(err);
+		console.log("\n\n");
+		try {
+			uix.debug(true);
+		} catch (err) {
+			console.log("Unable to include uix.debug();");
+		}
+		
+		console.log("\n\n############============   End Copying Here   ============############\n\n");
+	}
+
+	$(document).ready(function(){
+		if (typeof(audentio) === 'undefined') {
+			var errMsg = 'Uh Oh!  It looks like the javascript for your theme was not found in /js/audentio/uix_style/.\n\n';
+			if (uix.jsGlobal) {
+				errMsg += 'Your forum is set to use the same javascript directory for all your themes.  Consider disabling this or modifying the directory.  Options are located under Options > [UI.X] General.\n\n'
+			} else {
+				errMsg += 'Your theme has set the location of its javascript directory.  You may need to modify the javascript directory location style property located under [UI.X] Global Settings > Javascript Path.\n\n'
+			}
+			errMsg += 'If your files are in the directory specified, ensure that your file permissions allow them to be read.  There will likely be significant issues with the use of the forum until this is corrected.  If you are unable to resolve this, contact Audentio support.  This error has also been logged to the javascript console.';
+			
+			uix.fixJsVisibility();
+			
+			uix.adminJsError(errMsg);
+		} else if (uix.jsHeadVersion != uix.jsVersion) {
+			var errMsg = 'Uh Oh! It looks like the version of your javascript functions file does not match the version of your page_container_js_head template.  \n\nYour javascript functions file is version "' + uix.jsVersion + '". \nYour page_container_js_head is version "' + uix.jsHeadVersion + '".  \n\nIf your functions file version number is higher, ensure that you have merged all templates (especially page_container_js_head).  If your page_container_js_head version number is higher, ensure that you have correctly uploaded the latest version of the javascript functions file and that you have cleared anything that could cache an old version of the javascript (CDN / Cloudflare / etc.). \n\nThis issue could cause parts of your forum to not display or function correctly.  If this does not resolve the issue contact Audentio support.  This error has also been logged to the javascript console.';
+			uix.adminJsError(errMsg);
+		}
+	});
+</script>
+
+<script>
+	try {
+		uix.sticky.stickyMinDist = parseInt('50');
+		
+		$(document).ready(function(){
+			try {
+				
+				
+				
+				uix.initFunc();
+			} catch (err) {
+				uix.catchJsError(err);
+			}
+		});
+	} catch (err) {
+		uix.catchJsError(err);
+	}
+</script>
+
+
+
+	
+	
+	<link rel="apple-touch-icon" href="https://www.beamng.com/styles/uix/uix/logo2.og.png" />
+	<link rel="alternate" type="application/rss+xml" title="RSS feed for BeamNG" href="forums/-/index.rss" />
+	<meta name="description" content="plug and play" />
+	
+	<link rel="canonical" href="https://www.beamng.com/resources/tyrelabs.39641/" />
+		<meta property="og:site_name" content="BeamNG" />
+	
+	<meta property="og:image" content="https://www.beamng.com/styles/uix/uix/logo2.og.png" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://www.beamng.com/resources/tyrelabs.39641/" />
+	<meta property="og:title" content="Beta - Tyrelabs" />
+	
+	
+	
+	
+
+
+
+
+	<meta name="theme-color" content="rgb(73, 147, 197)">
+	<LINK REL="SHORTCUT ICON" HREF="/favicon.ico">
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/languages/lua.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+	
+	
+	
+		
+
+<div id="loginBar">
+	<div class="pageContent">
+		<span class="helper"></span>
+	</div>
+	<div class="pageWidth">
+		
+		
+		
+	</div>
+</div>
+	
+	
+	
+		<div id="uix_paneContainer" class="off-canvas-wrapper">
+			
+				<aside class="uix_sidePane left-off-canvas-content">
+	
+		<div class="uix_sidePane_content uix_offCanvasNavigation">
+<ul>
+	<!-- home -->
+	
+		<li class="navTab home"><a href="//www.beamng.com" class="navLink">Home</a></li>
+	
+	
+	
+	<!-- extra tabs: home -->
+	
+	
+		
+			<li class="navTab nodetab94 ">
+				<a href="https://www.beamng.com/link-forums/devblog.94/" class="navLink">DevBlog</a>
+			</li>
+		
+	
+	
+	
+	
+	<!-- forums -->
+	
+		<li class="navTab forums ">
+		
+			<a href="https://www.beamng.com/forums/" class="navLink">Forums</a>
+			<a href="https://www.beamng.com/forums/" class="SplitCtrl" rel="subMenu"></a>
+			
+			<div class="subMenu">
+				<ul class="blockLinksList">
+				
+					
+					<li><a href="search/?type=post">Search Forums</a></li>
+					
+					<li><a href="find-new/posts" rel="nofollow">Recent Posts</a></li>
+				
+				</ul>
+			</div>
+		</li>
+	
+	
+	
+	<!-- extra tabs: middle -->
+	
+	
+		
+			<li class="navTab resources selected">
+		
+			<a href="https://www.beamng.com/resources/" class="navLink">Mods</a>
+			<a href="https://www.beamng.com/resources/" class="SplitCtrl" rel="subMenu"></a>
+			
+			<div class="subMenu">
+				<ul class="secondaryContent blockLinksList">
+	
+	<li><a href="search/?type=resource_update">Search Resources</a></li>
+	
+	<li><a href="resources/reviews">Latest Reviews</a></li>
+	
+	
+	
+</ul>
+			</div>
+		</li>
+		
+	
+	
+	
+	
+	<!-- members -->
+					
+	
+	<!-- extra tabs: end -->
+	
+	
+		
+			<li class="navTab nodetab574 ">
+				<a href="https://www.beamng.com/link-forums/wiki.574/" class="navLink">Wiki</a>
+			</li>
+		
+	
+		
+			<li class="navTab nodetab588 ">
+				<a href="https://www.beamng.com/link-forums/discord.588/" class="navLink">Discord</a>
+			</li>
+		
+	
+		
+			<li class="navTab nodetab593 ">
+				<a href="https://www.beamng.com/link-forums/forum-rules.593/" class="navLink">Forum Rules</a>
+			</li>
+		
+	
+		
+			<li class="navTab nodetab52 ">
+				<a href="https://www.beamng.com/link-forums/whats-new.52/" class="navLink">What&#039;s new?</a>
+			</li>
+		
+	
+	
+	
+			
+
+</ul>
+</div>
+	
+</aside>
+			
+			
+				<aside class="uix_sidePane right-off-canvas-content">
+	
+		<script>
+	var uix_offCanvasCurrentTab = 'uix_offCanvasVisitorMenu';
+	var uix_offCanvasVisitorConvoLoad = true;
+	var uix_offCanvasVisitorAlertLoad = true;
+	function uix_offCanvasVisitorTab(ele, id) {
+		jQuery('#uix_offcanvasVisitorTabs .navTab').removeClass('selected');
+		jQuery('.uix_sidePane_content.uix_offCanvasVisitorTabs ul').removeClass('activeTab').removeClass('leftTab').removeClass('rightTab');
+		
+		jQuery(ele).parent().addClass('selected');
+		jQuery('#' + id).addClass('activeTab');
+		if (id == 'uix_offCanvasVisitorMenu') {
+			if (uix_offCanvasCurrentTab == 'uix_offCanvasVisitorAlert') {
+				jQuery('#uix_offCanvasVisitorConvo').css('opacity', 0)
+				window.setTimeout(function(){jQuery('#uix_offCanvasVisitorConvo').css('opacity', 1);}, 300);
+			}
+			jQuery('#uix_offCanvasVisitorConvo').addClass('rightTab');
+			jQuery('#uix_offCanvasVisitorAlert').addClass('rightTab');
+		} else if (id == 'uix_offCanvasVisitorConvo') {
+			if (uix_offCanvasVisitorConvoLoad){
+				uix_offCanvasVisitorConvoLoad = false;
+				$('#uix_offCanvasVisitorConvo .listPlaceholder').load('conversations/popup #content div:not(.sidebar) .secondaryContent li:lt(5)');
+			}
+			jQuery('#uix_offCanvasVisitorMenu').addClass('leftTab');
+			jQuery('#uix_offCanvasVisitorAlert').addClass('rightTab');
+			
+			//XenForo.balloonCounterUpdate($('#VisitorExtraMenu_Counter'), 0);
+			//XenForo.balloonCounterUpdate($('#uix_VisitorExtraMenu_Counter'), 0);
+			//XenForo.balloonCounterUpdate($('#ConversationsMenu_Counter'), 0);
+			uix.fn.syncBaloon($('#ConversationsMenu_Counter'), $('#uix_ConversationsMenu_Counter'));
+		} else if (id == 'uix_offCanvasVisitorAlert') {
+			if (uix_offCanvasVisitorAlertLoad){
+				uix_offCanvasVisitorAlertLoad = false;
+				$('#uix_offCanvasVisitorAlert .listPlaceholder').load('account/alerts-popup #content div:not(.sidebar) .secondaryContent li:lt(5)');
+			}
+			
+			if (uix_offCanvasCurrentTab == 'uix_offCanvasVisitorMenu') {
+				jQuery('#uix_offCanvasVisitorConvo').css('opacity', 0)
+				window.setTimeout(function(){jQuery('#uix_offCanvasVisitorConvo').css('opacity', 1);}, 300);
+			}
+			jQuery('#uix_offCanvasVisitorConvo').addClass('leftTab');
+			jQuery('#uix_offCanvasVisitorMenu').addClass('leftTab');
+			
+			XenForo.balloonCounterUpdate($('#VisitorExtraMenu_Counter'), 0);
+			XenForo.balloonCounterUpdate($('#uix_VisitorExtraMenu_Counter'), 0);
+			XenForo.balloonCounterUpdate($('#AlertsMenu_Counter'), 0);
+			uix.fn.syncBaloon($('#AlertsMenu_Counter'), $('#uix_AlertsMenu_Counter'));
+		}
+		
+		uix_offCanvasCurrentTab = id;
+	}	
+</script>
+
+<div class="uix_sidePane_content uix_offCanvasVisitorTabs">
+	<div class="uix_offCanvasTabsWrapper">
+		<ul id="uix_offcanvasVisitorTabs" class="uix_offcanvasTabs">
+			<li class="navTab selected"><a class="navLink" onclick="uix_offCanvasVisitorTab(this, 'uix_offCanvasVisitorMenu')"></a></li>
+			<li class="navTab">
+				<a onclick="uix_offCanvasVisitorTab(this, 'uix_offCanvasVisitorConvo')" class="navLink">
+					<i class="uix_icon uix_icon-inbox"></i>
+					<strong class="itemCount Zero" id="uix_ConversationsMenu_Counter" data-text="You have %d new unread conversation(s).">
+						<span class="Total">0</span>
+					</strong>
+				</a>
+			</li>
+			<li class="navTab">
+				<a onclick="uix_offCanvasVisitorTab(this, 'uix_offCanvasVisitorAlert')" class="navLink">
+					<i class="uix_icon uix_icon-alerts"></i>
+					<strong class="itemCount Zero" id="uix_AlertsMenu_Counter" data-text="You have %d new alert(s).">
+						<span class="Total">0</span>
+					</strong>
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="uix_offCanvasPanes">
+		<ul class="activeTab" id="uix_offCanvasVisitorMenu">
+		
+			<li class="navTab full">
+			<div class="primaryContent menuHeader">
+				<a class="avatar Av0m NoOverlay plainImage" title="View your profile" data-avatarhtml="true"><span class="img m" style="background-image: url('styles/uix/xenforo/avatars/avatar_m.png')"></span></a>
+					
+				<h3><a href="members/0/" class="concealed" title="View your profile"></a></h3>
+					
+				<div class="muted">Guest</div>	
+				
+			</div>
+			</li>
+			
+			
+			
+			<li class="fl navTab"><a class="navLink" href="members/0/">Your Profile Page</a></li>
+			
+			
+				
+				
+				<li class="navTab"><a class="navLink" href="account/contact-details">Contact Details</a></li>
+				<li class="navTab"><a class="navLink" href="account/privacy">Privacy</a></li>
+				<li class="navTab"><a class="navLink" href="account/preferences" class="OverlayTrigger">Preferences</a></li>
+				<li class="navTab"><a class="navLink" href="account/alert-preferences">Alert Preferences</a></li>
+				
+				
+				<li class="navTab"><a class="navLink" href="account/security">Password</a></li>
+			
+				
+			
+				<li class="navTab"><a class="navLink" href="account/news-feed">Your News Feed</a></li>
+				
+				<li class="navTab"><a class="navLink" href="account/likes">Likes You've Received</a></li>
+				<li class="navTab"><a class="navLink" href="search/member?user_id=0">Your Content</a></li>
+				<li class="navTab"><a class="navLink" href="account/following">People You Follow</a></li>
+				<li class="navTab"><a class="navLink" href="account/ignored">People You Ignore</a></li>
+				
+			
+			
+				<li class="navTab"><a href="logout/" class="LogOut navLink">Log Out</a></li>
+			
+				<li class="navTab full">				
+					<form action="account/toggle-visibility" method="post" class="AutoValidator visibilityForm navLink">
+						<label><input type="checkbox" name="visible" value="1" class="SubmitOnChange"  checked="checked" />
+							Show online status</label>
+						<input type="hidden" name="_xfToken" value="" />
+					</form>
+				</li>
+		
+		</ul>
+		
+		<ul id="uix_offCanvasVisitorConvo" class="rightTab">
+			<div class="menuHeader primaryContent">
+				<h3>
+					<span class="Progress InProgress"></span>
+					<a href="conversations/" class="concealed">Conversations</a>
+				</h3>						
+			</div>
+					
+			<div class="listPlaceholder"></div>
+					
+			
+			<li class="navTab"><a class="navLink" href="conversations/">Show All...</a></li>
+	
+		</ul>
+		
+		<ul id="uix_offCanvasVisitorAlert" class="rightTab">
+			<div class="menuHeader primaryContent">
+				<h3>
+					<span class="Progress InProgress"></span>
+					<a href="account/alerts" class="concealed">Alerts</a>
+				</h3>
+			</div>
+					
+			<div class="listPlaceholder"></div>
+					
+			<li class="navTab"><a href="account/alert-preferences" class="floatLink navLink">Alert Preferences</a></li>
+			<li class="navTab"><a class="navLink" href="account/alerts">Show All...</a></li>
+		</ul>
+	</div>
+</div>
+	
+</aside>
+			
+			<div class="inner-wrapper">
+				
+				<a href="#" class="exit-off-canvas"></a>
+		
+	
+
+	
+	
+	<div class="uix_wrapperFix" style="height: 1px; margin-bottom: -1px;"></div>
+		<div id="uix_wrapper">
+
+<div id="headerMover">
+	<div id="headerProxy"></div>
+<header>
+	
+
+
+<div id="header">
+	
+
+
+
+	
+	
+	
+		
+
+
+<div id="logoBlock" >
+
+		
+		
+		<div class="pageContent">
+		
+		
+		<div class="pageWidth">
+		
+			
+		
+		<div id="logo"><a href="//www.beamng.com">
+			<span></span>
+			<img src="styles/uix/uix/logo.png" alt="BeamNG" />
+			
+		</a></div>
+		
+		
+		
+			
+		
+			
+		<span class="helper"></span>
+		</div>
+	</div>	
+</div>
+	
+	
+	
+
+
+
+
+<div id="navigation" class="withSearch stickyTop">
+	<div class="sticky_wrapper">
+		<div class="uix_navigationWrapper">
+		
+			<div class="pageContent">
+				<nav>
+					<div class="navTabs">
+						
+						<div class="pageWidth">
+						
+							
+							<ul class="publicTabs navLeft">
+	
+							
+							<li id="logo_small">
+								<a href="//www.beamng.com">
+								
+									<img src="styles/uix/uix/logo_small.png">
+								
+								</a>
+							</li>
+							
+							
+							
+
+
+											
+	
+		
+	
+	
+
+
+
+
+
+
+
+
+
+
+	<li class="navTab uix_offCanvas_trigger PopupClosed" id="uix_paneTriggerLeft">
+		<a class="navLink" href="#">
+			<i class="uix_icon uix_icon-navTrigger uix_icon-navTriggerLeft"></i> Menu
+			
+		</a>
+	</li>
+
+
+							
+							<!-- home -->
+							
+								<li class="navTab home PopupClosed"><a href="//www.beamng.com" class="navLink"><i class="uix_icon uix_icon-home"></i></a></li>
+							
+								
+								
+								<!-- extra tabs: home -->
+								
+								
+									
+										<li class="navTab nodetab94 PopupClosed">
+											<a href="https://www.beamng.com/link-forums/devblog.94/" class="navLink NoPopupGadget" rel="Menu">DevBlog</a>
+											
+										</li>
+									
+								
+								
+								
+								
+								<!-- forums -->
+								
+									<li class="navTab forums PopupClosed">
+									
+										<a href="https://www.beamng.com/forums/" class="navLink NoPopupGadget" rel="Menu">Forums</a>
+										
+										<div class="Menu JsOnly tabMenu forumsTabLinks">
+											
+												<div class="primaryContent menuHeader">
+													<h3>Forums</h3>
+													<div class="muted">Quick Links</div>
+												</div>
+												<ul class="secondaryContent blockLinksList">
+												
+													
+													<li><a href="search/?type=post">Search Forums</a></li>
+													
+													<li><a href="find-new/posts" rel="nofollow">Recent Posts</a></li>
+													<li><a href="members/" rel="nofollow">Find Member</a></li>
+												
+												</ul>
+												
+											
+										</div>
+									</li>
+								
+								
+								
+								<!-- extra tabs: middle -->
+								
+								
+									
+										<li class="navTab resources selected">
+									
+										<a href="https://www.beamng.com/resources/" class="navLink NoPopupGadget" rel="Menu">Mods</a>
+										
+										<div class="tabLinks resourcesTabLinks">
+											<div class="pageWidth">
+												<div class="primaryContent menuHeader">
+													<h3>Mods</h3>
+													<div class="muted">Quick Links</div>
+												</div>
+												<ul class="secondaryContent blockLinksList">
+	
+	<li><a href="search/?type=resource_update">Search Resources</a></li>
+	
+	<li><a href="resources/reviews">Latest Reviews</a></li>
+	
+	
+	
+</ul>
+												
+											</div>
+										</div>
+									</li>
+									
+								
+								
+																
+								<!-- extra tabs: end -->
+								
+								
+									
+										<li class="navTab nodetab574 PopupClosed">
+											<a href="https://www.beamng.com/link-forums/wiki.574/" class="navLink NoPopupGadget" rel="Menu">Wiki</a>
+											
+										</li>
+									
+								
+									
+										<li class="navTab nodetab588 PopupClosed">
+											<a href="https://www.beamng.com/link-forums/discord.588/" class="navLink NoPopupGadget" rel="Menu">Discord</a>
+											
+										</li>
+									
+								
+									
+										<li class="navTab nodetab593 PopupClosed">
+											<a href="https://www.beamng.com/link-forums/forum-rules.593/" class="navLink NoPopupGadget" rel="Menu">Forum Rules</a>
+											
+										</li>
+									
+								
+									
+										<li class="navTab nodetab52 PopupClosed">
+											<a href="https://www.beamng.com/link-forums/whats-new.52/" class="navLink NoPopupGadget" rel="Menu">What&#039;s new?</a>
+											
+										</li>
+									
+								
+								
+								
+								<!-- responsive popup -->
+								<li class="navTab navigationHiddenTabs Popup PopupControl PopupClosed" style="display:none">	
+												
+									<a rel="Menu" class="navLink NoPopupGadget uix_dropdownDesktopMenu"><i class="uix_icon uix_icon-navTrigger"></i><span class="uix_hide menuIcon">Menu</span></a>
+									
+									<div class="Menu JsOnly blockLinksList primaryContent" id="NavigationHiddenMenu"></div>
+								</li>
+									
+								
+								<!-- no selection -->
+								
+								
+	
+									
+									
+									
+										
+	
+							</ul>
+							
+							
+							
+								
+								
+								<ul class="navRight visitorTabs">
+								
+								
+								
+									
+								
+									
+									
+									
+									
+									
+										
+
+	<li class="navTab login PopupClosed">
+		
+			<a href="login/" class="navLink uix_dropdownDesktopMenu">
+				<i class="uix_icon uix_icon-signIn"></i> 
+				<strong class="loginText">Log in</strong>
+			</a>
+		
+		
+		
+		
+	</li>
+	
+	
+	<li class="navTab register PopupClosed">
+		<a href="register/" class="navLink">
+			<i class="uix_icon uix_icon-register"></i> 
+			<strong>Sign up</strong>
+		</a>
+	</li>
+	
+	
+
+									
+							
+									
+									
+									
+
+
+											
+	
+		
+	
+	
+
+
+
+
+
+
+
+
+
+	
+									
+										
+
+		<li class="navTab uix_searchTab">
+		
+			
+
+
+
+
+<div id="searchBar" class="hasSearchButton">
+	
+	<i id="QuickSearchPlaceholder" class="uix_icon uix_icon-search" title="Search"></i>
+	
+	
+	
+	
+	<fieldset id="QuickSearch">
+		<form action="search/search" method="post" class="formPopup">
+			
+			<div class="primaryControls">
+				<!-- block: primaryControls -->
+				<i class="uix_icon uix_icon-search" onclick='$("#QuickSearch form").submit()'></i>
+				<input type="search" name="keywords" value="" class="textCtrl" placeholder="Search..." results="0" title="Enter your search and hit enter" id="QuickSearchQuery" />				
+				<!-- end block: primaryControls -->
+			</div>
+			
+			<div class="secondaryControls">
+				<div class="controlsWrapper">
+				
+					<!-- block: secondaryControls -->
+					<dl class="ctrlUnit">
+						<dt></dt>
+						<dd><ul>
+							<li><label><input type="checkbox" name="title_only" value="1" checked="checked"
+								id="search_bar_title_only" class="AutoChecker"
+								data-uncheck="#search_bar_thread" /> Search titles only</label></li>
+						</ul></dd>
+					</dl>
+				
+					<dl class="ctrlUnit">
+						<dt><label for="searchBar_users">Posted by Member:</label></dt>
+						<dd>
+							<input type="text" name="users" value="" class="textCtrl AutoComplete" id="searchBar_users" />
+							<p class="explain">Separate names with a comma.</p>
+						</dd>
+					</dl>
+				
+					<dl class="ctrlUnit">
+						<dt><label for="searchBar_date">Newer Than:</label></dt>
+						<dd><input type="date" name="date" value="" class="textCtrl" id="searchBar_date" /></dd>
+					</dl>
+					
+					
+					<dl class="ctrlUnit">
+						<dt></dt>
+						<dd><ul>
+								
+									<li>
+	<label title="Search only Land"><input type="checkbox" name="type[resource_update][categories][]" value="3" checked="checked" /> Search this category only</label>
+
+<ul>
+	<li><label><input type="checkbox" name="type[resource_update][is_resource]" value="1" /> Search only resource descriptions</label>
+</ul></li>
+								
+						</ul></dd>
+					</dl>
+					
+				</div>
+				<!-- end block: secondaryControls -->
+				
+				<dl class="ctrlUnit submitUnit">
+					<dt></dt>
+					<dd>
+						<input type="submit" value="Search" class="button primary Tooltip" title="Find Now" />
+						<a href="search/" class="button moreOptions Tooltip" title="Advanced Search">More...</a>
+						<div class="Popup" id="commonSearches">
+							<a rel="Menu" class="button NoPopupGadget Tooltip" title="Useful Searches" data-tipclass="flipped"><span class="arrowWidget"></span></a>
+							<div class="Menu">
+								<div class="primaryContent menuHeader">
+									<h3>Useful Searches</h3>
+								</div>
+								<ul class="secondaryContent blockLinksList">
+									<!-- block: useful_searches -->
+									<li><a href="find-new/posts?recent=1" rel="nofollow">Recent Posts</a></li>
+									
+									<!-- end block: useful_searches -->
+								</ul>
+							</div>
+						</div>
+					</dd>
+				</dl>
+				
+			</div>
+			
+			<input type="hidden" name="_xfToken" value="" />
+		</form>		
+	</fieldset>
+	
+
+</div>
+		</li>
+	
+
+									
+								
+								
+								
+								</ul>
+								
+							
+							
+							
+								
+
+<div id="uix_searchMinimal">
+	<form action="index.php?search/search" method="post">
+		<i id="uix_searchMinimalClose" class="uix_icon uix_icon-close"  title="Close"></i>
+		<i id="uix_searchMinimalOptions" class="uix_icon uix_icon-cog" title="Options"></i>
+		<div id="uix_searchMinimalInput" >
+			<input type="search" name="keywords" value="" placeholder="Search..." results="0" />
+		</div>
+		<input type="hidden" name="_xfToken" value="" />
+	</form>
+</div>
+
+
+							
+									
+								
+						</div>
+					</div>
+	
+				<span class="helper"></span>
+					
+				</nav>
+			</div>
+		
+		</div>
+	</div>
+</div>
+	
+	
+</div>
+
+	
+	
+</header>
+
+<div id="content" class="resource_description">
+	
+	<div class="pageWidth">
+		<div class="pageContent">
+	
+			<!-- main content area -->
+			
+			
+			
+			
+
+			
+			
+			<div class="breadBoxTop  ">
+				
+				
+
+<nav>
+
+	
+	
+	
+		
+			
+		
+			
+		
+	
+
+	<fieldset class="breadcrumb">
+		<a href="misc/quick-navigation-menu" class="OverlayTrigger jumpMenuTrigger" data-cacheOverlay="true" title="Open quick navigation"><i class="uix_icon uix_icon-sitemap"></i><!--Jump to...--></a>
+			
+		<div class="boardTitle"><strong>BeamNG</strong></div>
+		
+		<span class="crumbs">
+			
+				<span class="crust homeCrumb" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="//www.beamng.com" class="crumb" rel="up" itemprop="url"><span itemprop="title"><i class="uix_icon uix_icon-home"></i></span></a>
+					<span class="arrow"><span></span></span>
+				</span>
+			
+			
+			
+				<span class="crust selectedTabCrumb" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="https://www.beamng.com/resources/" class="crumb" rel="up" itemprop="url"><span itemprop="title">Mods</span></a>
+					<span class="arrow"><span>&gt;</span></span>
+				</span>
+			
+			
+			
+				
+					<span class="crust" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+						<a href="https://www.beamng.com/resources/categories/vehicles.2/" class="crumb" rel="up" itemprop="url"><span itemprop="title">Vehicles</span></a>
+						<span class="arrow"><span>&gt;</span></span>
+					</span>
+				
+					<span class="crust" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+						<a href="https://www.beamng.com/resources/categories/land.3/" class="crumb" rel="up" itemprop="url"><span itemprop="title">Land</span></a>
+						<span class="arrow"><span>&gt;</span></span>
+					</span>
+				
+			
+		</span>
+	</fieldset>
+</nav>
+				
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+	
+			
+			
+				<div class="uix_contentFix">	
+					<div class="mainContainer">
+						<div class="mainContent">
+			
+					
+						<!--[if lt IE 8]>
+							<p class="importantMessage">You are using an out of date browser. It  may not display this or other websites correctly.<br />You should upgrade or use an <a href="https://www.google.com/chrome/browser/" target="_blank">alternative browser</a>.</p>
+						<![endif]-->
+						
+						
+						
+						
+	
+
+		
+		
+		
+
+		<div class="PanelScroller Notices" data-vertical="0" data-speed="400" data-interval="4000">
+			<div class="scrollContainer">
+				<div class="PanelContainer">
+					<ol class="Panels">
+						
+							<li class="panel Notice DismissParent notice_4 " data-notice="4">
+	
+	<div class="baseHtml noticeContent"><a href="https://documentation.beamng.com/tutorials/mods/installing-mods/" style="margin:auto;"><img src="https://media-cdn.beamng.com/lda5A6JTxZ3sKfh1" style="margin:0px auto; vertical-align:middle; display:block; max-width: 100%; max-height: 75px;"></img></a></div>
+	
+	
+</li>
+						
+					</ol>
+				</div>
+			</div>
+
+			
+		</div>
+
+	
+
+	
+						
+						
+						
+						
+						
+
+						
+						
+						
+						
+						
+						
+						<!-- main template -->
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="resourceInfo">
+
+	
+		<ul class="primaryLinks ">
+		
+			
+				<li>
+								<!-- <div style="color: red !important;max-width: 250px;word-wrap: break-word;text-align: center;font-weight: bold;">Repository Maintenance in progress - 'Install' button may not be functional on some mods for the next hours. Thanks for your patience.</div> -->
+					<label class="downloadButton">
+						<a href="beamng:v1/subscriptionMod/M2YNFTLV4" class="inner" style="background-color:#22aa22 !important;padding:30px;" title="Automatically downloads and installs using the installed game">
+							Subscribe
+						</a>
+					</label>
+				</li>
+				<li>
+					<label class="downloadButton">
+						<a href="beamng:v1/showMod/M2YNFTLV4" class="inner" style="background-color:#7070f8 !important;padding:10px;" title="Opens the mod in the ingame repository">
+							View ingame
+						</a>
+					</label>
+				</li>
+			
+			
+				<li><label class="downloadButton ">
+					<a href="resources/tyrelabs.39641/download?version=73278" class="inner" >
+						Download Now
+						
+							<small class="minorText">1.3 MB .zip</small>
+						
+					</a>
+				</label></li>
+			
+
+			
+		
+		</ul>
+	
+
+	<div class="resourceImage">
+		
+			<img src="data/resource_icons/39/39641.jpg?1791231808" alt="" class="resourceIcon" />
+		
+	</div>
+
+	<h1><span class="prefix prefixWipBeta">Beta</span> Tyrelabs <span class="muted">1.0</span></h1>
+	<p class="tagLine muted">plug and play</p>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="resourceTabs">
+	
+	<ul class="tabs">
+	
+		<li class="resourceTabDescription active">
+			<a href="resources/tyrelabs.39641/">Overview</a>
+		</li>
+				
+		
+		
+		<li class="resourceTabReviews ">
+			<a href="resources/tyrelabs.39641/reviews">Reviews (8)</a>
+		</li>
+		
+	<li class="resourceTabHistory ">
+		<a href="resources/tyrelabs.39641/historyImproved">Version History
+			
+		</a>
+	</li>
+
+		
+	
+
+	</ul>
+</div>
+
+<div class="innerContent">
+	
+
+
+
+<div class="updateContainer section">
+	<ol>
+		
+
+
+
+
+<li class="primaryContent messageSimple resourceUpdate" id="update-73335" data-author="giogoesinsane">
+
+	
+
+	<a href="members/giogoesinsane.486434/" class="avatar Av486434m" data-avatarhtml="true"><img src="data/avatars/m/486/486434.jpg?1788269620" width="96" height="96" alt="giogoesinsane" /></a>
+
+	
+
+	
+
+	<article><blockquote class="ugc baseHtml messageText">
+		
+				
+			
+		TyreLab by Gio — V1.0<br />
+
+	
+	<a href="https://www.beamng.com/attachments/tyrelab_v1_rijweergave-png.1340982/" target="_blank" class="LbTrigger"
+		data-href="misc/lightbox"><img
+		src="data/attachments/1322/1322613-3edf19c2b02d67c885b7bf5f4c36fefe.jpg" alt="TyreLab_v1_rijweergave.png"
+		class="bbCodeImage LbImage" /></a>
+			
+<br />
+<br />
+Temperature, pressure, wear and estimated wet-grip behaviour — every tyre, one compact app.<br />
+<br />
+See how each tyre changes as you drive. TyreLab combines a per-wheel simulation with a readable dashboard, showing where the tread heats up, how it wears and how pressure develops. Keep the compact display on screen while driving, or open an individual tyre for more detail.<br />
+<br />
+What is included<br />
+<br />
+• Independent calculations for each wheel: front, rear, left and right.<br />
+• Three tread zones per tyre: outer, middle and inner. Colour shows temperature; fill height, depth and percentages show remaining tread.<br />
+• Surface, bulk tread, carcass and air temperatures, with heat-related pressure changes.<br />
+• Tyre-family and compound-dependent working ranges, wear and drainage estimates. Dimensions, load and slip also influence the model.<br />
+• Estimated water-related traction loss, shown with blue indicators alongside each tyre.<br />
+• A compact 280 × 360 driving display, with a larger layout available by resizing the app.<br />
+• Selectable bar/psi and Celsius/Fahrenheit, with saved display preferences.<br />
+• Wear controls, thermal pause/resume and optional road-grip controls for the current session.<br />
+• The included Static Driver camera follows chassis motion and supports looking around.<br />
+<br />
+One app, four views<br />
+<br />
+LIVE — Temperature, tread remaining, pressure and estimated wet-grip loss together.<br />
+DETAILS — Individual tyre readings, load, slip, contact-area estimates and tread-zone information.<br />
+ROAD — Optional controls for native surface grip. Leave the multipliers at 1.00× for normal surfaces. Applying a change affects every vehicle using that surface; Restore changes undoes the app&#039;s adjustments.<br />
+SETTINGS — Simulation controls, display units and compact-layout preferences.<br />
+<br />
+Built around native BeamNG physics<br />
+<br />
+The simulation continues when the app is hidden. Tyre calculations follow vehicle physics updates, while the display updates separately. BeamNG&#039;s native tyre deformation, contact forces and steering-force calculation remain the foundation; TyreLab does not replace the FFB solver or change your FFB settings.<br />
+<br />
+Each wheel keeps its own thermal, pressure and wear state. A vehicle reset restores fresh tyres at ambient temperature.<br />
+<br />
+Installation<br />
+<br />
+1. Disable older GripDYN or kagoni mod packages and other tyre-physics controllers that would modify the same tyres.<br />
+2. Place TyreLab.zip in your active BeamNG user folder&#039;s mods folder. Keep the ZIP intact.<br />
+3. Reload your vehicle, then add “TyreLab by Gio” using the UI Apps selector.<br />
+4. Select compatible TyreLab tyre/compound options in the parts selector where available.<br />
+<br />
+The controller works with supported pneumatic tyres, including native tyres. Optional TTB tyre options require the separate TTB pack for their meshes and materials; that asset pack is not included.<br />
+<br />
+Model scope and compatibility<br />
+<br />
+Tyre material, contact-area and drainage parameters are engineering estimates, not manufacturer-validated data for every tyre. Tread behaviour uses tyre-family/profile parameters; it does not derive a physical groove model from the visual mesh.<br />
+<br />
+Wet-grip behaviour is a traction approximation. The model assumes a 0.35 mm film on classified wet material, or 3 mm when native water contact is detected. It does not measure puddle depth or add artificial vertical lift. Native water forces remain active.<br />
+<br />
+Tested in BeamNG.drive 0.39.4.0. Compatibility with every third-party vehicle, tyre or other physics mod is not guaranteed.<br />
+<br />
+Screenshots and credits<br />
+<br />
+The cover is promotional artwork. Interface previews use illustrative values to show uneven heating, wear and water indicators clearly. The in-game image shows live readings from a stationary vehicle; the pictured vehicle is not included.<br />
+<br />
+TyreLab interface and integration: Gio.<br />
+Adapted native tyre structures and Static Driver camera base: BeamNG GmbH.<br />
+Optional TTB tyre structures and compatibility adaptations: TheTalkingBath.<br />
+Applicable component credits and the camera&#039;s bCDDL 1.1 notice are retained in the mod.
+		
+				
+			
+	</blockquote></article>
+
+	
+
+	
+
+	<div class="messageMeta">
+		<span class="privateControls">
+			
+			
+			
+			
+			
+
+			
+			
+			
+			
+			
+			
+		</span>
+		
+	</div>
+
+	<div id="likes-update-73335"></div>
+</li>
+	</ol>
+</div>
+
+
+
+
+
+
+
+
+	<div class="section reviews">
+		<h3 class="textHeading">Recent Reviews</h3>
+		<ol>
+		
+			
+
+
+
+<li id="review-73278-356609" class="primaryContent review messageSimple   " data-author="KaMiKaZeE443">
+
+	<a href="members/kamikazee443.356609/" class="avatar Av356609s" data-avatarhtml="true"><img src="data/avatars/s/356/356609.jpg?1576371118" width="48" height="48" alt="KaMiKaZeE443" /></a>
+
+	<div class="messageInfo">
+
+		<div class="messageContent ToggleTriggerAnchor">
+			
+			<a href="members/kamikazee443.356609/" class="username poster" dir="auto">KaMiKaZeE443</a>
+			
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="1.00">
+					 <span class="star Full"></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">1</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint"></span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<span class="muted">Version: 1.0</span>
+			
+			<article><blockquote class="ugc baseHtml">Nothing wrong with using some AI but man, you gotta test and bug fix as well... this, this right here is AI Slop...</blockquote></article>
+		</div>
+
+		<div class="messageMeta">
+			<div class="privateControls">
+				<a href="resources/tyrelabs.39641/reviews?resource_rating_id=170159" title="Permalink" class="item muted"><abbr class="DateTime" data-time="1791775232" data-diff="6139" data-datestring="Oct 12, 2026" data-timestring="5:20 AM">Oct 12, 2026 at 5:20 AM</abbr></a>
+				
+				
+				
+
+				
+
+				
+			</div>
+
+			
+		</div>
+
+		
+
+	</div>
+</li>
+		
+			
+
+
+
+<li id="review-73278-47502" class="primaryContent review messageSimple   " data-author="ThePajlok">
+
+	<a href="members/thepajlok.47502/" class="avatar Av47502s" data-avatarhtml="true"><img src="data/avatars/s/47/47502.jpg?1650991832" width="48" height="48" alt="ThePajlok" /></a>
+
+	<div class="messageInfo">
+
+		<div class="messageContent ToggleTriggerAnchor">
+			
+			<a href="members/thepajlok.47502/" class="username poster" dir="auto">ThePajlok</a>
+			
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="1.00">
+					 <span class="star Full"></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">1</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint"></span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<span class="muted">Version: 1.0</span>
+			
+			<article><blockquote class="ugc baseHtml">another ai slop mod</blockquote></article>
+		</div>
+
+		<div class="messageMeta">
+			<div class="privateControls">
+				<a href="resources/tyrelabs.39641/reviews?resource_rating_id=170149" title="Permalink" class="item muted"><abbr class="DateTime" data-time="1791742726" data-diff="38645" data-datestring="Oct 11, 2026" data-timestring="8:18 PM">Oct 11, 2026 at 8:18 PM</abbr></a>
+				
+				
+				
+
+				
+
+				
+			</div>
+
+			
+		</div>
+
+		
+
+	</div>
+</li>
+		
+			
+
+
+
+<li id="review-73278-529150" class="primaryContent review messageSimple   " data-author="1-TRS">
+
+	<a href="members/1-trs.529150/" class="avatar Av529150s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_s.png" width="48" height="48" alt="1-TRS" /></a>
+
+	<div class="messageInfo">
+
+		<div class="messageContent ToggleTriggerAnchor">
+			
+			<a href="members/1-trs.529150/" class="username poster" dir="auto">1-TRS</a>
+			
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="1.00">
+					 <span class="star Full"></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">1</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint"></span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<span class="muted">Version: 1.0</span>
+			
+			<article><blockquote class="ugc baseHtml">Good lord, if you make it with AI, at least test it or something</blockquote></article>
+		</div>
+
+		<div class="messageMeta">
+			<div class="privateControls">
+				<a href="resources/tyrelabs.39641/reviews?resource_rating_id=170146" title="Permalink" class="item muted"><abbr class="DateTime" data-time="1791735026" data-diff="46345" data-datestring="Oct 11, 2026" data-timestring="6:10 PM">Oct 11, 2026 at 6:10 PM</abbr></a>
+				
+				
+				
+
+				
+
+				
+			</div>
+
+			
+		</div>
+
+		
+
+	</div>
+</li>
+		
+			
+
+
+
+<li id="review-73278-439721" class="primaryContent review messageSimple   " data-author="KillerBee 2">
+
+	<a href="members/killerbee-2.439721/" class="avatar Av439721s" data-avatarhtml="true"><img src="data/avatars/s/439/439721.jpg?1621559990" width="48" height="48" alt="KillerBee 2" /></a>
+
+	<div class="messageInfo">
+
+		<div class="messageContent ToggleTriggerAnchor">
+			
+			<a href="members/killerbee-2.439721/" class="username poster" dir="auto">KillerBee 2</a>
+			
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="1.00">
+					 <span class="star Full"></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">1</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint"></span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<span class="muted">Version: 1.0</span>
+			
+			<article><blockquote class="ugc baseHtml">This is what gives AI a bad name. The mod is not even remotely ready for release. Did you even verify the code that claude spit out? The drop downs don&#039;t work (should be working on any release) the tires heat up way too fast, and the telemetry is wrong.</blockquote></article>
+		</div>
+
+		<div class="messageMeta">
+			<div class="privateControls">
+				<a href="resources/tyrelabs.39641/reviews?resource_rating_id=170132" title="Permalink" class="item muted"><abbr class="DateTime" data-time="1791688920" data-diff="92451" data-datestring="Oct 11, 2026" data-timestring="5:22 AM">Oct 11, 2026 at 5:22 AM</abbr></a>
+				
+				
+				
+
+				
+
+				
+			</div>
+
+			
+		</div>
+
+		
+
+	</div>
+</li>
+		
+			
+
+
+
+<li id="review-73278-750902" class="primaryContent review messageSimple   " data-author="Garage13">
+
+	<a href="members/garage13.750902/" class="avatar Av750902s" data-avatarhtml="true"><img src="data/avatars/s/750/750902.jpg?1788754523" width="48" height="48" alt="Garage13" /></a>
+
+	<div class="messageInfo">
+
+		<div class="messageContent ToggleTriggerAnchor">
+			
+			<a href="members/garage13.750902/" class="username poster" dir="auto">Garage13</a>
+			
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="1.00">
+					 <span class="star Full"></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">1</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint"></span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<span class="muted">Version: 1.0</span>
+			
+			<article><blockquote class="ugc baseHtml">nobody wants your ai slop</blockquote></article>
+		</div>
+
+		<div class="messageMeta">
+			<div class="privateControls">
+				<a href="resources/tyrelabs.39641/reviews?resource_rating_id=170125" title="Permalink" class="item muted"><abbr class="DateTime" data-time="1791665588" data-diff="115783" data-datestring="Oct 10, 2026" data-timestring="10:53 PM">Oct 10, 2026 at 10:53 PM</abbr></a>
+				
+				
+				
+
+				
+
+				
+			</div>
+
+			
+		</div>
+
+		
+
+	</div>
+</li>
+		
+			
+
+
+
+<li id="review-73278-434696" class="primaryContent review messageSimple   " data-author="Lichi">
+
+	<a href="members/lichi.434696/" class="avatar Av434696s" data-avatarhtml="true"><img src="data/avatars/s/434/434696.jpg?1719493294" width="48" height="48" alt="Lichi" /></a>
+
+	<div class="messageInfo">
+
+		<div class="messageContent ToggleTriggerAnchor">
+			
+			<a href="members/lichi.434696/" class="username poster" dir="auto">Lichi</a>
+			
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="1.00">
+					 <span class="star Full"></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">1</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint"></span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<span class="muted">Version: 1.0</span>
+			
+			<article><blockquote class="ugc baseHtml">Stop the ai slop</blockquote></article>
+		</div>
+
+		<div class="messageMeta">
+			<div class="privateControls">
+				<a href="resources/tyrelabs.39641/reviews?resource_rating_id=170124" title="Permalink" class="item muted"><abbr class="DateTime" data-time="1791665445" data-diff="115926" data-datestring="Oct 10, 2026" data-timestring="10:50 PM">Oct 10, 2026 at 10:50 PM</abbr></a>
+				
+				
+				
+
+				
+
+				
+			</div>
+
+			
+		</div>
+
+		
+
+	</div>
+</li>
+		
+			
+
+
+
+<li id="review-73278-810487" class="primaryContent review messageSimple   " data-author="razka">
+
+	<a href="members/razka.810487/" class="avatar Av810487s" data-avatarhtml="true"><img src="data/avatars/s/810/810487.jpg?1783837725" width="48" height="48" alt="razka" /></a>
+
+	<div class="messageInfo">
+
+		<div class="messageContent ToggleTriggerAnchor">
+			
+			<a href="members/razka.810487/" class="username poster" dir="auto">razka</a>
+			
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="1.00">
+					 <span class="star Full"></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">1</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint"></span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<span class="muted">Version: 1.0</span>
+			
+			<article><blockquote class="ugc baseHtml">please dont fill the repo with ai slop please</blockquote></article>
+		</div>
+
+		<div class="messageMeta">
+			<div class="privateControls">
+				<a href="resources/tyrelabs.39641/reviews?resource_rating_id=170123" title="Permalink" class="item muted"><abbr class="DateTime" data-time="1791664159" data-diff="117212" data-datestring="Oct 10, 2026" data-timestring="10:29 PM">Oct 10, 2026 at 10:29 PM</abbr></a>
+				
+				
+				
+
+				
+
+				
+			</div>
+
+			
+		</div>
+
+		
+
+	</div>
+</li>
+		
+			
+
+
+
+<li id="review-73278-826663" class="primaryContent review messageSimple   " data-author="Ardente Racer">
+
+	<a href="members/ardente-racer.826663/" class="avatar Av826663s" data-avatarhtml="true"><img src="styles/uix/xenforo/avatars/avatar_s.png" width="48" height="48" alt="Ardente Racer" /></a>
+
+	<div class="messageInfo">
+
+		<div class="messageContent ToggleTriggerAnchor">
+			
+			<a href="members/ardente-racer.826663/" class="username poster" dir="auto">Ardente Racer</a>
+			
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="2.00">
+					 <span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">2</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint"></span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<span class="muted">Version: 1.0</span>
+			
+			<article><blockquote class="ugc baseHtml">The grip seems too high at first and the tire pressure doesn&#039;t change for me (or only negligibly). Meanwhile, the temperatures are rising too quickly. I can&#039;t manage to switch from bar to psi.</blockquote></article>
+		</div>
+
+		<div class="messageMeta">
+			<div class="privateControls">
+				<a href="resources/tyrelabs.39641/reviews?resource_rating_id=170116" title="Permalink" class="item muted"><abbr class="DateTime" data-time="1791652522" data-diff="128849" data-datestring="Oct 10, 2026" data-timestring="7:15 PM">Oct 10, 2026 at 7:15 PM</abbr></a>
+				
+				
+				
+
+				
+
+				
+			</div>
+
+			
+		</div>
+
+		
+
+	</div>
+</li>
+		
+		</ol>
+		<div  style="display: none"><a href="javascript:" class="muted jsOnly DisplayIgnoredContent Tooltip" title="Show hidden content by ">Show Ignored Content</a></div>
+		
+	</div>
+
+</div>
+
+
+
+
+
+
+						
+						
+						
+						
+							<!-- login form, to be moved to the upper drop-down -->
+							
+
+
+
+
+
+      
+
+
+<form action="login/login" method="post" class="xenForm eAuth" id="login" style="display:none">
+
+	
+		<ul id="eAuthUnit">
+			
+				
+				
+				
+				
+				
+				
+      
+      				
+               <li><a href="register/steam?reg=1" style="text-decoration:none;display: inline-block;">
+   <img src="styles/default/steamauth/steam_signin.png" alt="Log in with Steam" style="margin:0 14px;"/>
+</a></li>
+                
+    
+    
+				
+			
+		</ul>
+	
+
+	<div class="ctrlWrapper">
+		<dl class="ctrlUnit">
+			<dt><label for="LoginControl">Your name or email address:</label></dt>
+			<dd><input type="text" name="login" id="LoginControl" class="textCtrl" tabindex="101" /></dd>
+		</dl>
+	
+	
+		<dl class="ctrlUnit">
+			<dt>
+				<label for="ctrl_password">Do you already have an account?</label>
+			</dt>
+			<dd>
+				<ul>
+					<li><label for="ctrl_not_registered"><input type="radio" name="register" value="1" id="ctrl_not_registered" tabindex="105" />
+						No, create an account now.</label></li>
+					<li><label for="ctrl_registered"><input type="radio" name="register" value="0" id="ctrl_registered" tabindex="105" checked="checked" class="Disabler" />
+						Yes, my password is:</label></li>
+					<li id="ctrl_registered_Disabler">
+						<input type="password" name="password" class="textCtrl" id="ctrl_password" tabindex="102" />
+						<div class="lostPassword"><a href="lost-password/" class="OverlayTrigger OverlayCloser" tabindex="106">Forgot your password?</a></div>
+					</li>
+				</ul>
+			</dd>
+		</dl>
+	
+		
+		<dl class="ctrlUnit submitUnit">
+			<dt></dt>
+			<dd>
+				<input type="submit" class="button primary" value="Log in" tabindex="104" data-loginPhrase="Log in" data-signupPhrase="Sign up" />
+				<label for="ctrl_remember" class="rememberPassword"><input type="checkbox" name="remember" value="1" id="ctrl_remember" tabindex="103" /> Stay logged in</label>
+			</dd>
+		</dl>
+	</div>
+
+	<input type="hidden" name="cookie_check" value="1" />
+	<input type="hidden" name="redirect" value="/resources/tyrelabs.39641/" />
+	<input type="hidden" name="_xfToken" value="" />
+
+</form>
+						
+						
+			
+						</div>
+					</div>
+				
+					<!-- sidebar -->
+					<aside class="uix_mainSidebar uix_mainSidebar_left">
+						<div class="inner_wrapper">
+							<div class="sidebar">
+								
+								
+								
+								
+	
+
+	
+	
+	<div class="section statsList" id="resourceInfo" itemscope="itemscope" itemtype="http://data-vocabulary.org/Review-aggregate">
+		<div class="secondaryContent">
+		
+			<h3>
+				Information
+				
+			</h3>
+			<span style="display:none">
+				<span itemprop="itemreviewed">Beta - Tyrelabs</span>,
+				<span itemprop="votes">8</span> ratings
+			</span>
+			<div class="pairsJustified">
+				<dl class="author"><dt>Author:</dt>
+					
+						<dd><a href="resources/authors/giogoesinsane.486434/">giogoesinsane</a></dd>
+					
+				</dl>
+				
+					<dl class="downloadCount"><dt title="By unique downloaders">Total Downloads:</dt>
+						<dd>4,354</dd></dl>
+				
+				
+<dl>
+<dt class="noselect">Unique ID:</dt>
+<dd style="font-family:monospace;">M2YNFTLV4</dd>
+</dl>
+<dl>
+<dt class="noselect">Subscriptions:</dt>
+<dd style="font-family:monospace;">3559</dd>
+</dl>
+
+<dl class="firstRelease"><dt>First Release:</dt>
+					<dd><abbr class="DateTime" data-time="1791552358" data-diff="229013" data-datestring="Oct 9, 2026" data-timestring="3:25 PM">Oct 9, 2026 at 3:25 PM</abbr></dd></dl>
+				<dl class="lastUpdate"><dt>Last Update:</dt>
+					<dd><abbr class="DateTime" data-time="1791552358" data-diff="229013" data-datestring="Oct 9, 2026" data-timestring="3:25 PM">Oct 9, 2026 at 3:25 PM</abbr></dd></dl>
+				<dl class="resourceCategory"><dt>Category:</dt>
+					<dd><a href="resources/categories/land.3/">Land</a></dd></dl>
+				
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted">All-Time Rating:</dt>
+			<dd>		
+				<span class="ratings" title="1.13">
+					 <span class="star Full"></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">1.125</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint">8 ratings</span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			</div>
+
+			
+		
+		</div>
+	</div>
+
+	
+	
+	
+		<div class="section" id="versionInfo">
+			<div class="secondaryContent">
+			
+				<h3>Version 1.0</h3>
+		
+				<div class="pairsJustified">
+					<dl class="versionReleaseDate"><dt>Released:</dt>
+						<dd><abbr class="DateTime" data-time="1791552358" data-diff="229013" data-datestring="Oct 9, 2026" data-timestring="3:25 PM">Oct 9, 2026 at 3:25 PM</abbr></dd></dl>
+		
+					
+						<dl class="versionDownloadCount"><dt title="By unique downloaders">Downloads:</dt>
+							<dd>86</dd></dl>
+					
+		
+					
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted">Version Rating:</dt>
+			<dd>		
+				<span class="ratings" title="1.00">
+					 <span class="star Full"></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">1</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint">8 ratings</span>
+			</dd>
+		</dl>	
+	</div>
+
+
+		
+					
+				</div>
+			
+			</div>
+		</div>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	<div class="section">
+		<div class="secondaryContent" id="moreAppsByAuthor">
+			<h3><a href="resources/authors/giogoesinsane.486434/" class="concealed">More Resources from giogoesinsane</a></h3>
+			<dl>
+			
+				<dt style="margin-top: 5px"><a href="resources/circuit-du-clastres.39037/"><span class="prefix prefixWipBeta">Beta</span> Circuit du Clastres</a></dt>
+					<dd class="muted">created with mapng and world editor</dd>
+			
+				<dt style="margin-top: 5px"><a href="resources/staticdrivercamerav2.38894/"><span class="prefix prefixWipBeta">Beta</span> staticdrivercameraV2</a></dt>
+					<dd class="muted">100%  following movement of the chassis</dd>
+			
+				<dt style="margin-top: 5px"><a href="resources/static-driver-camera-1-1-roll-and-pitch-vehicle.37016/"><span class="prefix prefixWipBeta">Beta</span> static driver camera 1:1 roll and pitch vehicle</a></dt>
+					<dd class="muted">a  camera created specialy for ffb steering wheels and (triple)monitor</dd>
+			
+			</dl>
+		</div>
+	</div>
+	
+
+	
+
+	
+
+	
+
+
+								
+								
+							</div>
+						</div>
+					</aside>
+				</div>
+			
+			
+			
+						
+				
+			
+			
+						
+			
+						
+			</div>
+	
+		</div>
+	</div>
+	
+</div>
+
+<footer>
+	
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+	
+		<div class="pageContent">
+			<div class="pageWidth">
+			
+				
+				
+				
+				
+				
+				<ul class="footerLinks">
+					
+						<li><a href="//www.beamng.com" class="homeLink">Home</a></li>
+
+<li><a href="//beamng.gmbh" class="">Company</a></li>
+<li><a href="//beamng.gmbh/team" class="">About us</a></li>
+
+						
+							<li><a href="https://support.beamng.com/" >Contact Us</a></li>
+						
+						<li><a href="help/">Help</a></li>
+					
+					
+						<li><a href="//beamng.com/game/support/policies/terms-of-service/">Terms and Rules</a></li>
+						<li><a href="//beamng.com/game/support/policies/privacy-policy/ ">Privacy Policy</a></li>
+					
+
+<li><a href="//beamng.com/imprint" class="">Impressum</a></li>
+
+					<li class="topLink"><a href="/resources/tyrelabs.39641/#XenForo"><i class="uix_icon uix_icon-jumpToTop"></i> <span class="uix_hide">Top</span></a></li>
+				</ul>
+				
+				
+			
+			</div>
+			<span class="helper"></span>
+		</div>
+	
+</div>
+
+<div id="uix_stickyFooterSpacer"></div>
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+<div class="footerLegal">
+	
+		<div class="pageContent">
+			<div class="pageWidth">
+			<div id="copyright">
+				 
+				
+			</div>
+			
+			
+				<ul class="uix_socialMediaLinks">
+        <li class="rss"><a href="https://discord.gg/YKcSWAy" rel="alternate}" target="_blank"><img src="https://www.beamng.com/styles/uix/uix/discord.png" width="40" height="40"></a></li>
+	<li class="facebook"><a href="https://www.facebook.com/BeamNGPhysics" target="_blank"><i class="uix_icon uix_icon-facebook"></i></a></li>
+        <li class="twitter"><a href="https://twitter.com/beamng" target="_blank"><i class="uix_icon uix_icon-twitter"></i></a></li>
+        <li class="youtube"><a href="https://www.youtube.com/user/beamng" target="_blank"><i class="uix_icon uix_icon-youtube"></i></a></li>
+        
+        
+        
+        
+        
+        <li class="instagram"><a href="https://www.instagram.com/beamng.official/" target="_blank"><i class="uix_icon uix_icon-instagram"></i></a></li>
+        
+        <li class="steam"><a href="http://store.steampowered.com/app/284160/"><i class="uix_icon uix_icon-steam"></i></a></li>
+        
+        
+        
+        <li class="git"><a href="https://github.com/BeamNG/"><i class="uix_icon uix_icon-git"></i></a></li>
+        <li class="reddit"><a href="https://www.reddit.com/r/beamng"><i class="uix_icon uix_icon-reddit"></i></a></li>
+        
+        
+        <li class="contact"><a href="https://support.beamng.com/" target="_blank"><i class="uix_icon uix_icon-email"></i></a></li>
+        
+
+
+
+<!--ADD LIST ITEMS HERE -->
+
+
+
+        
+</ul>
+				
+			
+			<span class="helper"></span>
+		</div>
+	</div>	
+</div>
+
+
+
+</footer>
+
+<div class="bottomFixer">
+	
+	
+		
+		
+		
+		<div class="PanelScrollerOff Notices">
+			<div class="scrollContainer">
+				<div class="PanelContainer">
+					<ol class="Panels">
+						
+							<li class="panel Notice DismissParent notice_-1 " data-notice="-1">
+	
+	<div class="baseHtml noticeContent"><div class="noticeCookiesContent">
+	<div class="noticeCookiesContentRow">
+		This site uses cookies to help personalise content, tailor your experience and to keep you logged in if you register.<br />
+By continuing to use this site, you are consenting to our use of cookies.
+	</div>
+	
+	<div class="noticeCookiesContentRow noticeCookiesContentButtonRow">
+		<a href="account/dismiss-notice?notice_id=-1" class="button CustomDismissCtrl">Accept</a>
+		<a href="help/cookies" class="button">Learn More...</a>
+	</div>
+</div></div>
+	
+	
+		<a href="account/dismiss-notice?notice_id=-1"
+			title="Dismiss Notice" class="DismissCtrl Tooltip" data-offsetx="7" data-tipclass="flipped">Dismiss Notice</a>
+</li>
+						
+					</ol>
+				</div>
+			</div>
+		</div>
+	
+
+</div>
+
+<script>
+
+
+jQuery.extend(true, XenForo,
+{
+	visitor: { user_id: 0 },
+	serverTimeInfo:
+	{
+		now: 1791781371,
+		today: 1791756000,
+		todayDow: 1
+	},
+	_lightBoxUniversal: "0",
+	_enableOverlays: "1",
+	_animationSpeedMultiplier: "0",
+	_overlayConfig:
+	{
+		top: "10%",
+		speed: 0,
+		closeSpeed: 0,
+		mask:
+		{
+			color: "rgb(255, 255, 255)",
+			opacity: "0.6",
+			loadSpeed: 0,
+			closeSpeed: 0
+		}
+	},
+	_ignoredUsers: [],
+	_loadedScripts: {"nat_public_css":true,"resource_view":true,"resource_view_header":true,"resource_view_tabs":true,"message_simple":true,"bb_code":true,"resource_update":true,"resource_review":true,"rating":true,"login_bar":true,"moderator_bar":true,"notices":true,"panel_scroller":true},
+	_cookieConfig: { path: "/", domain: "", prefix: "xf_"},
+	_csrfToken: "",
+	_csrfRefreshUrl: "login/csrf-token-refresh",
+	_jsVersion: "7ade89d5",
+	_noRtnProtect: false,
+	_noSocialLogin: false
+});
+jQuery.extend(XenForo.phrases,
+{
+	cancel: "Cancel",
+
+	a_moment_ago:    "A moment ago",
+	one_minute_ago:  "1 minute ago",
+	x_minutes_ago:   "%minutes% minutes ago",
+	today_at_x:      "Today at %time%",
+	yesterday_at_x:  "Yesterday at %time%",
+	day_x_at_time_y: "%day% at %time%",
+
+	day0: "Sunday",
+	day1: "Monday",
+	day2: "Tuesday",
+	day3: "Wednesday",
+	day4: "Thursday",
+	day5: "Friday",
+	day6: "Saturday",
+
+	_months: "January,February,March,April,May,June,July,August,September,October,November,December",
+	_daysShort: "Sun,Mon,Tue,Wed,Thu,Fri,Sat",
+
+	following_error_occurred: "The following error occurred",
+	server_did_not_respond_in_time_try_again: "The server did not respond in time. Please try again.",
+	logging_in: "Logging in",
+	click_image_show_full_size_version: "Click this image to show the full-size version.",
+	show_hidden_content_by_x: "Show hidden content by {names}"
+});
+
+// Facebook Javascript SDK
+XenForo.Facebook.appId = "";
+XenForo.Facebook.forceInit = false;
+
+
+
+
+
+
+
+
+
+
+
+
+	$('.navTabs .navTab.nodetab588 > a.navLink').attr('target', '_blank');
+
+
+
+
+	$('.navTabs .navTab.nodetab593 > a.navLink').attr('target', '_blank');
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</div> 
+<div class="uix_wrapperFix" style="height: 1px; margin-top: -1px;"></div>
+
+
+		</div> 
+	</div> 
+
+
+<script>
+
+</script>
+
+
+</body>
+</html>

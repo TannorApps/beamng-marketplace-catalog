@@ -1,0 +1,3462 @@
+
+
+
+
+<!DOCTYPE html>
+<html id="XenForo" lang="en-US" dir="LTR" class="Public NoJs LoggedOut NoSidebar  Responsive hasTabLinks hasSearch navStyle_0 pageStyle_1 hasFlexbox" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+	
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	
+		<base href="https://www.beamng.com/" />
+		<script>
+			var _b = document.getElementsByTagName('base')[0], _bH = "https://www.beamng.com/";
+			if (_b && _b.href != _bH) _b.href = _bH;
+		</script>
+	
+
+	<title>Land | BeamNG</title>
+	
+	<noscript><style>.JsOnly, .jsOnly { display: none !important; }</style></noscript>
+	<link rel="stylesheet" href="css.php?css=xenforo,form,public&amp;style=3&amp;dir=LTR&amp;d=1791462974" />
+	
+	<link rel="stylesheet" href="css.php?css=action_filter_row,login_bar,moderator_bar,nat_public_css,notices,panel_scroller,rating,resource_list,resource_list_mini&amp;style=3&amp;dir=LTR&amp;d=1791462974" />
+
+	
+	<link rel="stylesheet" href="css.php?css=uix,uix_style&amp;style=3&amp;dir=LTR&amp;d=1791462974" />
+	
+	<style>
+/* User specific styling */
+
+	
+		.pageWidth {
+			
+				max-width: 94%;
+			
+		}
+	
+	
+		.Menu.uix_megaMenu
+		{
+			
+				max-width: 94%;
+			
+		}
+		
+		
+		
+	
+	
+	
+	
+	
+	
+		
+			
+			
+			
+			
+			
+		
+	
+	
+	
+		
+		
+
+</style>
+	
+	<link rel="stylesheet" href="css.php?css=EXTRA&amp;style=3&amp;dir=LTR&amp;d=1791462974" />
+
+	
+	
+	<style>
+/* Node Styling */
+.node.node_4 > .nodeInfo {}.node.node_5 > .nodeInfo {}.node.node_10 > .nodeInfo {}.node.node_13 > .nodeInfo {}.node.node_15 > .nodeInfo {background:rgba(0, 0, 0, 0.05);}.node.node_17 > .nodeInfo {}.node.node_23 > .nodeInfo {}.node.node_25 > .nodeInfo {}.node.node_26 > .nodeInfo {}.node.node_27 > .nodeInfo {}.node.node_28 > .nodeInfo {}.node.node_29 > .nodeInfo {}.node.node_30 > .nodeInfo {}.node.node_39 > .nodeInfo {}.node.node_40 > .nodeInfo {}.node.node_41 > .nodeInfo {}.node.node_42 > .nodeInfo {}.node.node_43 > .nodeInfo {}.node.node_44 > .nodeInfo {}.node.node_45 > .nodeInfo {}.node.node_46 > .nodeInfo {}.node.node_47 > .nodeInfo {}.node.node_48 > .nodeInfo {}.node.node_49 > .nodeInfo {}.node.node_135 > .nodeInfo {}.node.node_170 > .nodeInfo {}.node.node_183 > .nodeInfo {}.node.node_257 > .nodeInfo {}.node.node_579 > .nodeInfo {}.node.node_580 > .nodeInfo {}.node.node_584 > .nodeInfo {}.node.node_585 > .nodeInfo {}.node.node_589 > .nodeInfo {}.node.node_590 > .nodeInfo {}.node.node_591 > .nodeInfo {}.node.node_592 > .nodeInfo {}
+</style>
+
+	
+
+	
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="styles/uix/uix/css/font-awesome.min.css" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700|Lato:400,700' rel='stylesheet' type='text/css'>
+
+
+<script src="js/jquery/jquery-1.11.0.min.js"></script>	
+
+
+	
+<script src="js/xenforo/xenforo.js?_v=7ade89d5"></script>
+
+
+
+
+
+<script>
+	uix = {
+		elm: {},
+		fn:{},
+		init: function(){
+			if (uix.betaMode) {
+				console.group('uix.%cinit()', 'color:#3498DB');
+			}
+			for(var x=0;x<uix.events.init.length;x++){
+				uix.events.init[x]()
+		  	}
+		  	console.groupEnd('uix.%cinit()','color:#3498DB')
+		},
+	  	events: {init:[]},
+	  	on: function(event, fn){
+	  		if(event=='init'){
+	  			uix.events.init.push(fn)
+	  		}
+	  	},
+	  
+		betaMode				: parseInt('0'),
+		jsPathUsed				: 'uix_style',
+		jsGlobal				: parseInt('0'),
+		
+	  
+	  	version					: '1.5.0.1',
+	  	jsHeadVersion				: '1.5.0.1',
+	  	addonVersion				: '1000572',
+	  	contentTemplate				: 'resource_category',
+	  
+		globalPadding 				: parseInt('12px'),
+		sidebarWidth				: parseInt('250px'),
+		mainContainerMargin  	        	: '262px',
+		maxResponsiveWideWidth   		: parseInt('800px'),
+		maxResponsiveMediumWidth 		: parseInt('610px'),
+		maxResponsiveNarrowWidth 		: parseInt('480px'),
+		sidebarMaxResponsiveWidth		: parseInt('800px'),
+		
+			responsiveMessageBreakpoint		: parseInt('610px'),
+		
+		sidebarMaxResponsiveWidthStr		: '800px',
+		
+			offCanvasTriggerWidth		: parseInt('800px'),
+		
+	  
+		jumpToFixedDelayHide			: parseInt('0'),
+	  
+		stickyNavigationMinWidth 		: parseInt('0'),
+		stickyNavigationMinHeight		: parseInt('600'),
+		stickyNavigationMaxWidth 		: parseInt('0'),
+		stickyNavigationMaxHeight		: parseInt('0'),
+		stickyNavigationPortraitMinWidth 	: parseInt('320'),
+		stickyNavigationPortraitMinHeight	: parseInt('500'),
+		stickyNavigationPortraitMaxWidth 	: parseInt('0'),
+		stickyNavigationPortraitMaxHeight	: parseInt('0'),
+		stickySidebar 				: 1,
+		
+			sidebarInnerFloat 		: "left",
+		
+		RTL					: 0,
+		stickyItems 				: {},
+		stickyGlobalMinimumPosition		: parseInt('200px'),
+		stickyGlobalScrollUp			: parseInt('0'),
+		stickyDisableIOSThirdParty		: parseInt('1'),
+		
+		searchMinimalSize			: parseInt('610px'),
+		
+		searchPosition				: parseInt('2'),
+		
+		nodeStyle				: parseInt('0'),
+		pageStyle				: parseInt('1'),
+		
+		enableBorderCheck			: parseInt('1'),
+		enableULManager				: parseInt('1'),
+		
+		threadSlidingAvatar			: parseInt('0'),
+		threadSlidingExtra			: parseInt('0'),
+		threadSlidingHover			: parseInt('0'),
+		threadSlidingStaffShow			: parseInt('0'),
+		threadSlidingGlobalEnable		: parseInt('1'),
+		
+		signatureHidingEnabled			: parseInt('1'),
+		signatureHidingEnabledAddon		: parseInt('1'),
+		signatureMaxHeight			: parseInt('60px'),
+		signatureHoverEnabled			: parseInt('0'),
+		
+		enableStickyFooter 			: parseInt('1'),
+		stickyFooterBottomOffset 		: parseInt('12px') * 2,
+		
+		
+			sidebarStickyBottomOffset	: parseInt(0),
+		
+	  
+	  	
+			offCanvasSidebar			: 1,
+
+			
+				offCanvasSidebarVisitorTabs		: 1,
+			
+		
+		
+	  
+		reinsertWelcomeBlock			: parseInt('0'),
+	  
+		sidebarCookieExpire			: '',
+		canCollapseSidebar			: '',
+		
+		cookiePrefix				: 'xf_',
+		sidebarLocation 			: parseInt('1'),
+		
+		collapsibleSidebar			: parseInt('0'),
+		collapsedNodesDefault			: '',
+		widthToggleUpper			: '94%',
+		widthToggleLower			: '80%',
+		
+			toggleWidthEnabled		: parseInt('1'),
+		
+		collapsibleNodes			: parseInt('0'),
+		collapsibleSticky			: parseInt('1'),
+		ajaxWidthToggleLink			: 'uix/toggle-width',
+		ajaxStickyThreadToggleLink		: 'uix/toggle-sticky-threads',
+		ajaxStickyThreadExpandLink		: 'uix/expand-sticky-threads',
+		ajaxStickyThreadCollapseLink		: 'uix/collapse-sticky-threads',
+		ajaxSidebarToggleLink			: 'uix/toggle-sidebar',
+		
+		user					: {
+								'themeName'		: 'BeamNG - UI.X',
+								'-themeParents'		: '3,2,0',
+								'-themeModified'	: '1791462974',
+								'-themeSelectable'	: '1',
+								languageName		: 'English (US)',
+								stickyEnableUserbar	: (parseInt('') == parseInt('')) ? parseInt('') : true,
+								stickyEnableNav		: (parseInt('') == parseInt('')) ? parseInt('') : true,
+								stickyEnableSidebar	: (parseInt('') == parseInt('')) ? parseInt('') : true,
+								widthToggleState	: (parseInt('') == parseInt('')) ? parseInt('') : parseInt('1'),
+								stickyThreadsState	: (parseInt('') == parseInt('')) ? (parseInt('') > 0) : 0,
+								
+									sidebarState	: 0,
+								
+								
+									collapseUserInfo : 1,
+								
+								
+									signatureHiding : 1,
+								
+							}
+	};
+	
+	if(uix.stickyNavigationMaxWidth == 0){uix.stickyNavigationMaxWidth = 999999}
+	if(uix.stickyNavigationMaxHeight == 0){uix.stickyNavigationMaxHeight = 999999}
+	if(uix.stickyNavigationPortraitMaxWidth == 0){uix.stickyNavigationPortraitMaxWidth = 999999}
+	if(uix.stickyNavigationPortraitMaxHeight == 0){uix.stickyNavigationPortraitMaxHeight = 999999}
+	
+	
+		uix.stickyItems['#navigation'] = {normalHeight:parseInt('50'), stickyHeight:parseInt('32')}
+		
+		var subElement = null;
+		
+			//if tablinks are visible
+			uix.stickyItems['#navigation'].options = {subElement: '#navigation .tabLinks', subNormalHeight: parseInt('41'), subStickyHeight: parseInt('40'), subStickyHide: 1 == 1 , scrollSticky: uix.stickyGlobalScrollUp }
+		
+		
+	
+	
+	
+	$(document).ready(function() {
+		if ( $('#userBar').length ) {
+			uix.stickyItems['#userBar']= {normalHeight:parseInt('32'), stickyHeight:parseInt('32')}
+			
+			uix.stickyItems['#userBar'].options = {scrollSticky: uix.stickyGlobalScrollUp }
+		}
+	});
+	
+	
+	$(document).ready(function(){
+	
+	//put jquery code here
+	
+
+});
+	
+	uix.debug = function() {
+		result = "\n\n############============   Begin Copying Here   ============############\n\n";
+		result += "Error: the functions file was not found.";
+		result += "\n\n############============   End Copying Here   ============############\n\n";
+
+		console.log(result);
+	}
+
+</script>
+
+<script src="js/audentio/uix_style/functions.min.js?_v=7ade89d5_1.5.0.1"></script>
+
+<script>
+	uix.adminJsError = function(errMsg) {
+		console.error(errMsg);
+		
+		
+	}
+	
+	uix.fixJsVisibility = function() {
+		var userBar = $('.hasJs #userBar');
+		var nodeList = $('.hasJs #forums, .hasJs .category_view .nodeList, .hasJs .watch_forums .nodeList');
+		if (userBar.length) userBar.css('display', 'block');
+		if (nodeList.length) nodeList.css('visibility', 'visible');
+	}
+	
+	uix.catchJsError = function(err) {
+		console.log("\n\n############============   Begin Copying Here   ============############\n\n")
+		var errMsg = "Uh Oh!  It looks like there's an error in your page's javascript.  There will likely be significant issues with the use of the forum until this is corrected.  If you are unable to resolve this and believe it is due to a bug in your Audentio Design theme, contact Audentio support and include a copy of the text between the designated areas from your javascript console.  This is the error: \n\n" + err ;
+		uix.fixJsVisibility();	
+		uix.adminJsError(errMsg);
+		console.log("\n\n");
+		console.log(err);
+		console.log("\n\n");
+		try {
+			uix.debug(true);
+		} catch (err) {
+			console.log("Unable to include uix.debug();");
+		}
+		
+		console.log("\n\n############============   End Copying Here   ============############\n\n");
+	}
+
+	$(document).ready(function(){
+		if (typeof(audentio) === 'undefined') {
+			var errMsg = 'Uh Oh!  It looks like the javascript for your theme was not found in /js/audentio/uix_style/.\n\n';
+			if (uix.jsGlobal) {
+				errMsg += 'Your forum is set to use the same javascript directory for all your themes.  Consider disabling this or modifying the directory.  Options are located under Options > [UI.X] General.\n\n'
+			} else {
+				errMsg += 'Your theme has set the location of its javascript directory.  You may need to modify the javascript directory location style property located under [UI.X] Global Settings > Javascript Path.\n\n'
+			}
+			errMsg += 'If your files are in the directory specified, ensure that your file permissions allow them to be read.  There will likely be significant issues with the use of the forum until this is corrected.  If you are unable to resolve this, contact Audentio support.  This error has also been logged to the javascript console.';
+			
+			uix.fixJsVisibility();
+			
+			uix.adminJsError(errMsg);
+		} else if (uix.jsHeadVersion != uix.jsVersion) {
+			var errMsg = 'Uh Oh! It looks like the version of your javascript functions file does not match the version of your page_container_js_head template.  \n\nYour javascript functions file is version "' + uix.jsVersion + '". \nYour page_container_js_head is version "' + uix.jsHeadVersion + '".  \n\nIf your functions file version number is higher, ensure that you have merged all templates (especially page_container_js_head).  If your page_container_js_head version number is higher, ensure that you have correctly uploaded the latest version of the javascript functions file and that you have cleared anything that could cache an old version of the javascript (CDN / Cloudflare / etc.). \n\nThis issue could cause parts of your forum to not display or function correctly.  If this does not resolve the issue contact Audentio support.  This error has also been logged to the javascript console.';
+			uix.adminJsError(errMsg);
+		}
+	});
+</script>
+
+<script>
+	try {
+		uix.sticky.stickyMinDist = parseInt('50');
+		
+		$(document).ready(function(){
+			try {
+				
+				
+				
+				uix.initFunc();
+			} catch (err) {
+				uix.catchJsError(err);
+			}
+		});
+	} catch (err) {
+		uix.catchJsError(err);
+	}
+</script>
+
+
+
+	
+	
+	<link rel="apple-touch-icon" href="https://www.beamng.com/styles/uix/uix/logo2.og.png" />
+	<link rel="alternate" type="application/rss+xml" title="RSS feed for BeamNG" href="forums/-/index.rss" />
+	<meta name="description" content="Vehicles with wheels" />
+	<link rel="next" href="resources/categories/land.3/?page=2" />
+	<link rel="canonical" href="https://www.beamng.com/resources/categories/land.3/" />
+
+
+
+
+	<meta name="theme-color" content="rgb(73, 147, 197)">
+	<LINK REL="SHORTCUT ICON" HREF="/favicon.ico">
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/languages/lua.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+	
+	
+	
+		
+
+<div id="loginBar">
+	<div class="pageContent">
+		<span class="helper"></span>
+	</div>
+	<div class="pageWidth">
+		
+		
+		
+	</div>
+</div>
+	
+	
+	
+		<div id="uix_paneContainer" class="off-canvas-wrapper">
+			
+				<aside class="uix_sidePane left-off-canvas-content">
+	
+		<div class="uix_sidePane_content uix_offCanvasNavigation">
+<ul>
+	<!-- home -->
+	
+		<li class="navTab home"><a href="//www.beamng.com" class="navLink">Home</a></li>
+	
+	
+	
+	<!-- extra tabs: home -->
+	
+	
+		
+			<li class="navTab nodetab94 ">
+				<a href="https://www.beamng.com/link-forums/devblog.94/" class="navLink">DevBlog</a>
+			</li>
+		
+	
+	
+	
+	
+	<!-- forums -->
+	
+		<li class="navTab forums ">
+		
+			<a href="https://www.beamng.com/forums/" class="navLink">Forums</a>
+			<a href="https://www.beamng.com/forums/" class="SplitCtrl" rel="subMenu"></a>
+			
+			<div class="subMenu">
+				<ul class="blockLinksList">
+				
+					
+					<li><a href="search/?type=post">Search Forums</a></li>
+					
+					<li><a href="find-new/posts" rel="nofollow">Recent Posts</a></li>
+				
+				</ul>
+			</div>
+		</li>
+	
+	
+	
+	<!-- extra tabs: middle -->
+	
+	
+		
+			<li class="navTab resources selected">
+		
+			<a href="https://www.beamng.com/resources/" class="navLink">Mods</a>
+			<a href="https://www.beamng.com/resources/" class="SplitCtrl" rel="subMenu"></a>
+			
+			<div class="subMenu">
+				<ul class="secondaryContent blockLinksList">
+	
+	<li><a href="search/?type=resource_update">Search Resources</a></li>
+	
+	<li><a href="resources/reviews">Latest Reviews</a></li>
+	
+	
+	
+</ul>
+			</div>
+		</li>
+		
+	
+	
+	
+	
+	<!-- members -->
+					
+	
+	<!-- extra tabs: end -->
+	
+	
+		
+			<li class="navTab nodetab574 ">
+				<a href="https://www.beamng.com/link-forums/wiki.574/" class="navLink">Wiki</a>
+			</li>
+		
+	
+		
+			<li class="navTab nodetab588 ">
+				<a href="https://www.beamng.com/link-forums/discord.588/" class="navLink">Discord</a>
+			</li>
+		
+	
+		
+			<li class="navTab nodetab593 ">
+				<a href="https://www.beamng.com/link-forums/forum-rules.593/" class="navLink">Forum Rules</a>
+			</li>
+		
+	
+		
+			<li class="navTab nodetab52 ">
+				<a href="https://www.beamng.com/link-forums/whats-new.52/" class="navLink">What&#039;s new?</a>
+			</li>
+		
+	
+	
+	
+			
+
+</ul>
+</div>
+	
+</aside>
+			
+			
+				<aside class="uix_sidePane right-off-canvas-content">
+	
+		<script>
+	var uix_offCanvasCurrentTab = 'uix_offCanvasVisitorMenu';
+	var uix_offCanvasVisitorConvoLoad = true;
+	var uix_offCanvasVisitorAlertLoad = true;
+	function uix_offCanvasVisitorTab(ele, id) {
+		jQuery('#uix_offcanvasVisitorTabs .navTab').removeClass('selected');
+		jQuery('.uix_sidePane_content.uix_offCanvasVisitorTabs ul').removeClass('activeTab').removeClass('leftTab').removeClass('rightTab');
+		
+		jQuery(ele).parent().addClass('selected');
+		jQuery('#' + id).addClass('activeTab');
+		if (id == 'uix_offCanvasVisitorMenu') {
+			if (uix_offCanvasCurrentTab == 'uix_offCanvasVisitorAlert') {
+				jQuery('#uix_offCanvasVisitorConvo').css('opacity', 0)
+				window.setTimeout(function(){jQuery('#uix_offCanvasVisitorConvo').css('opacity', 1);}, 300);
+			}
+			jQuery('#uix_offCanvasVisitorConvo').addClass('rightTab');
+			jQuery('#uix_offCanvasVisitorAlert').addClass('rightTab');
+		} else if (id == 'uix_offCanvasVisitorConvo') {
+			if (uix_offCanvasVisitorConvoLoad){
+				uix_offCanvasVisitorConvoLoad = false;
+				$('#uix_offCanvasVisitorConvo .listPlaceholder').load('conversations/popup #content div:not(.sidebar) .secondaryContent li:lt(5)');
+			}
+			jQuery('#uix_offCanvasVisitorMenu').addClass('leftTab');
+			jQuery('#uix_offCanvasVisitorAlert').addClass('rightTab');
+			
+			//XenForo.balloonCounterUpdate($('#VisitorExtraMenu_Counter'), 0);
+			//XenForo.balloonCounterUpdate($('#uix_VisitorExtraMenu_Counter'), 0);
+			//XenForo.balloonCounterUpdate($('#ConversationsMenu_Counter'), 0);
+			uix.fn.syncBaloon($('#ConversationsMenu_Counter'), $('#uix_ConversationsMenu_Counter'));
+		} else if (id == 'uix_offCanvasVisitorAlert') {
+			if (uix_offCanvasVisitorAlertLoad){
+				uix_offCanvasVisitorAlertLoad = false;
+				$('#uix_offCanvasVisitorAlert .listPlaceholder').load('account/alerts-popup #content div:not(.sidebar) .secondaryContent li:lt(5)');
+			}
+			
+			if (uix_offCanvasCurrentTab == 'uix_offCanvasVisitorMenu') {
+				jQuery('#uix_offCanvasVisitorConvo').css('opacity', 0)
+				window.setTimeout(function(){jQuery('#uix_offCanvasVisitorConvo').css('opacity', 1);}, 300);
+			}
+			jQuery('#uix_offCanvasVisitorConvo').addClass('leftTab');
+			jQuery('#uix_offCanvasVisitorMenu').addClass('leftTab');
+			
+			XenForo.balloonCounterUpdate($('#VisitorExtraMenu_Counter'), 0);
+			XenForo.balloonCounterUpdate($('#uix_VisitorExtraMenu_Counter'), 0);
+			XenForo.balloonCounterUpdate($('#AlertsMenu_Counter'), 0);
+			uix.fn.syncBaloon($('#AlertsMenu_Counter'), $('#uix_AlertsMenu_Counter'));
+		}
+		
+		uix_offCanvasCurrentTab = id;
+	}	
+</script>
+
+<div class="uix_sidePane_content uix_offCanvasVisitorTabs">
+	<div class="uix_offCanvasTabsWrapper">
+		<ul id="uix_offcanvasVisitorTabs" class="uix_offcanvasTabs">
+			<li class="navTab selected"><a class="navLink" onclick="uix_offCanvasVisitorTab(this, 'uix_offCanvasVisitorMenu')"></a></li>
+			<li class="navTab">
+				<a onclick="uix_offCanvasVisitorTab(this, 'uix_offCanvasVisitorConvo')" class="navLink">
+					<i class="uix_icon uix_icon-inbox"></i>
+					<strong class="itemCount Zero" id="uix_ConversationsMenu_Counter" data-text="You have %d new unread conversation(s).">
+						<span class="Total">0</span>
+					</strong>
+				</a>
+			</li>
+			<li class="navTab">
+				<a onclick="uix_offCanvasVisitorTab(this, 'uix_offCanvasVisitorAlert')" class="navLink">
+					<i class="uix_icon uix_icon-alerts"></i>
+					<strong class="itemCount Zero" id="uix_AlertsMenu_Counter" data-text="You have %d new alert(s).">
+						<span class="Total">0</span>
+					</strong>
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="uix_offCanvasPanes">
+		<ul class="activeTab" id="uix_offCanvasVisitorMenu">
+		
+			<li class="navTab full">
+			<div class="primaryContent menuHeader">
+				<a class="avatar Av0m NoOverlay plainImage" title="View your profile" data-avatarhtml="true"><span class="img m" style="background-image: url('styles/uix/xenforo/avatars/avatar_m.png')"></span></a>
+					
+				<h3><a href="members/0/" class="concealed" title="View your profile"></a></h3>
+					
+				<div class="muted">Guest</div>	
+				
+			</div>
+			</li>
+			
+			
+			
+			<li class="fl navTab"><a class="navLink" href="members/0/">Your Profile Page</a></li>
+			
+			
+				
+				
+				<li class="navTab"><a class="navLink" href="account/contact-details">Contact Details</a></li>
+				<li class="navTab"><a class="navLink" href="account/privacy">Privacy</a></li>
+				<li class="navTab"><a class="navLink" href="account/preferences" class="OverlayTrigger">Preferences</a></li>
+				<li class="navTab"><a class="navLink" href="account/alert-preferences">Alert Preferences</a></li>
+				
+				
+				<li class="navTab"><a class="navLink" href="account/security">Password</a></li>
+			
+				
+			
+				<li class="navTab"><a class="navLink" href="account/news-feed">Your News Feed</a></li>
+				
+				<li class="navTab"><a class="navLink" href="account/likes">Likes You've Received</a></li>
+				<li class="navTab"><a class="navLink" href="search/member?user_id=0">Your Content</a></li>
+				<li class="navTab"><a class="navLink" href="account/following">People You Follow</a></li>
+				<li class="navTab"><a class="navLink" href="account/ignored">People You Ignore</a></li>
+				
+			
+			
+				<li class="navTab"><a href="logout/" class="LogOut navLink">Log Out</a></li>
+			
+				<li class="navTab full">				
+					<form action="account/toggle-visibility" method="post" class="AutoValidator visibilityForm navLink">
+						<label><input type="checkbox" name="visible" value="1" class="SubmitOnChange"  checked="checked" />
+							Show online status</label>
+						<input type="hidden" name="_xfToken" value="" />
+					</form>
+				</li>
+		
+		</ul>
+		
+		<ul id="uix_offCanvasVisitorConvo" class="rightTab">
+			<div class="menuHeader primaryContent">
+				<h3>
+					<span class="Progress InProgress"></span>
+					<a href="conversations/" class="concealed">Conversations</a>
+				</h3>						
+			</div>
+					
+			<div class="listPlaceholder"></div>
+					
+			
+			<li class="navTab"><a class="navLink" href="conversations/">Show All...</a></li>
+	
+		</ul>
+		
+		<ul id="uix_offCanvasVisitorAlert" class="rightTab">
+			<div class="menuHeader primaryContent">
+				<h3>
+					<span class="Progress InProgress"></span>
+					<a href="account/alerts" class="concealed">Alerts</a>
+				</h3>
+			</div>
+					
+			<div class="listPlaceholder"></div>
+					
+			<li class="navTab"><a href="account/alert-preferences" class="floatLink navLink">Alert Preferences</a></li>
+			<li class="navTab"><a class="navLink" href="account/alerts">Show All...</a></li>
+		</ul>
+	</div>
+</div>
+	
+</aside>
+			
+			<div class="inner-wrapper">
+				
+				<a href="#" class="exit-off-canvas"></a>
+		
+	
+
+	
+	
+	<div class="uix_wrapperFix" style="height: 1px; margin-bottom: -1px;"></div>
+		<div id="uix_wrapper">
+
+<div id="headerMover">
+	<div id="headerProxy"></div>
+<header>
+	
+
+
+<div id="header">
+	
+
+
+
+	
+	
+	
+		
+
+
+<div id="logoBlock" >
+
+		
+		
+		<div class="pageContent">
+		
+		
+		<div class="pageWidth">
+		
+			
+		
+		<div id="logo"><a href="//www.beamng.com">
+			<span></span>
+			<img src="styles/uix/uix/logo.png" alt="BeamNG" />
+			
+		</a></div>
+		
+		
+		
+			
+		
+			
+		<span class="helper"></span>
+		</div>
+	</div>	
+</div>
+	
+	
+	
+
+
+
+
+<div id="navigation" class="withSearch stickyTop">
+	<div class="sticky_wrapper">
+		<div class="uix_navigationWrapper">
+		
+			<div class="pageContent">
+				<nav>
+					<div class="navTabs">
+						
+						<div class="pageWidth">
+						
+							
+							<ul class="publicTabs navLeft">
+	
+							
+							<li id="logo_small">
+								<a href="//www.beamng.com">
+								
+									<img src="styles/uix/uix/logo_small.png">
+								
+								</a>
+							</li>
+							
+							
+							
+
+
+											
+	
+		
+	
+	
+
+
+
+
+
+
+
+
+
+
+	<li class="navTab uix_offCanvas_trigger PopupClosed" id="uix_paneTriggerLeft">
+		<a class="navLink" href="#">
+			<i class="uix_icon uix_icon-navTrigger uix_icon-navTriggerLeft"></i> Menu
+			
+		</a>
+	</li>
+
+
+							
+							<!-- home -->
+							
+								<li class="navTab home PopupClosed"><a href="//www.beamng.com" class="navLink"><i class="uix_icon uix_icon-home"></i></a></li>
+							
+								
+								
+								<!-- extra tabs: home -->
+								
+								
+									
+										<li class="navTab nodetab94 PopupClosed">
+											<a href="https://www.beamng.com/link-forums/devblog.94/" class="navLink NoPopupGadget" rel="Menu">DevBlog</a>
+											
+										</li>
+									
+								
+								
+								
+								
+								<!-- forums -->
+								
+									<li class="navTab forums PopupClosed">
+									
+										<a href="https://www.beamng.com/forums/" class="navLink NoPopupGadget" rel="Menu">Forums</a>
+										
+										<div class="Menu JsOnly tabMenu forumsTabLinks">
+											
+												<div class="primaryContent menuHeader">
+													<h3>Forums</h3>
+													<div class="muted">Quick Links</div>
+												</div>
+												<ul class="secondaryContent blockLinksList">
+												
+													
+													<li><a href="search/?type=post">Search Forums</a></li>
+													
+													<li><a href="find-new/posts" rel="nofollow">Recent Posts</a></li>
+													<li><a href="members/" rel="nofollow">Find Member</a></li>
+												
+												</ul>
+												
+											
+										</div>
+									</li>
+								
+								
+								
+								<!-- extra tabs: middle -->
+								
+								
+									
+										<li class="navTab resources selected">
+									
+										<a href="https://www.beamng.com/resources/" class="navLink NoPopupGadget" rel="Menu">Mods</a>
+										
+										<div class="tabLinks resourcesTabLinks">
+											<div class="pageWidth">
+												<div class="primaryContent menuHeader">
+													<h3>Mods</h3>
+													<div class="muted">Quick Links</div>
+												</div>
+												<ul class="secondaryContent blockLinksList">
+	
+	<li><a href="search/?type=resource_update">Search Resources</a></li>
+	
+	<li><a href="resources/reviews">Latest Reviews</a></li>
+	
+	
+	
+</ul>
+												
+											</div>
+										</div>
+									</li>
+									
+								
+								
+																
+								<!-- extra tabs: end -->
+								
+								
+									
+										<li class="navTab nodetab574 PopupClosed">
+											<a href="https://www.beamng.com/link-forums/wiki.574/" class="navLink NoPopupGadget" rel="Menu">Wiki</a>
+											
+										</li>
+									
+								
+									
+										<li class="navTab nodetab588 PopupClosed">
+											<a href="https://www.beamng.com/link-forums/discord.588/" class="navLink NoPopupGadget" rel="Menu">Discord</a>
+											
+										</li>
+									
+								
+									
+										<li class="navTab nodetab593 PopupClosed">
+											<a href="https://www.beamng.com/link-forums/forum-rules.593/" class="navLink NoPopupGadget" rel="Menu">Forum Rules</a>
+											
+										</li>
+									
+								
+									
+										<li class="navTab nodetab52 PopupClosed">
+											<a href="https://www.beamng.com/link-forums/whats-new.52/" class="navLink NoPopupGadget" rel="Menu">What&#039;s new?</a>
+											
+										</li>
+									
+								
+								
+								
+								<!-- responsive popup -->
+								<li class="navTab navigationHiddenTabs Popup PopupControl PopupClosed" style="display:none">	
+												
+									<a rel="Menu" class="navLink NoPopupGadget uix_dropdownDesktopMenu"><i class="uix_icon uix_icon-navTrigger"></i><span class="uix_hide menuIcon">Menu</span></a>
+									
+									<div class="Menu JsOnly blockLinksList primaryContent" id="NavigationHiddenMenu"></div>
+								</li>
+									
+								
+								<!-- no selection -->
+								
+								
+	
+									
+									
+									
+										
+	
+							</ul>
+							
+							
+							
+								
+								
+								<ul class="navRight visitorTabs">
+								
+								
+								
+									
+								
+									
+									
+									
+									
+									
+										
+
+	<li class="navTab login PopupClosed">
+		
+			<a href="login/" class="navLink uix_dropdownDesktopMenu">
+				<i class="uix_icon uix_icon-signIn"></i> 
+				<strong class="loginText">Log in</strong>
+			</a>
+		
+		
+		
+		
+	</li>
+	
+	
+	<li class="navTab register PopupClosed">
+		<a href="register/" class="navLink">
+			<i class="uix_icon uix_icon-register"></i> 
+			<strong>Sign up</strong>
+		</a>
+	</li>
+	
+	
+
+									
+							
+									
+									
+									
+
+
+											
+	
+		
+	
+	
+
+
+
+
+
+
+
+
+
+	
+									
+										
+
+		<li class="navTab uix_searchTab">
+		
+			
+
+
+
+
+<div id="searchBar" class="hasSearchButton">
+	
+	<i id="QuickSearchPlaceholder" class="uix_icon uix_icon-search" title="Search"></i>
+	
+	
+	
+	
+	<fieldset id="QuickSearch">
+		<form action="search/search" method="post" class="formPopup">
+			
+			<div class="primaryControls">
+				<!-- block: primaryControls -->
+				<i class="uix_icon uix_icon-search" onclick='$("#QuickSearch form").submit()'></i>
+				<input type="search" name="keywords" value="" class="textCtrl" placeholder="Search..." results="0" title="Enter your search and hit enter" id="QuickSearchQuery" />				
+				<!-- end block: primaryControls -->
+			</div>
+			
+			<div class="secondaryControls">
+				<div class="controlsWrapper">
+				
+					<!-- block: secondaryControls -->
+					<dl class="ctrlUnit">
+						<dt></dt>
+						<dd><ul>
+							<li><label><input type="checkbox" name="title_only" value="1" checked="checked"
+								id="search_bar_title_only" class="AutoChecker"
+								data-uncheck="#search_bar_thread" /> Search titles only</label></li>
+						</ul></dd>
+					</dl>
+				
+					<dl class="ctrlUnit">
+						<dt><label for="searchBar_users">Posted by Member:</label></dt>
+						<dd>
+							<input type="text" name="users" value="" class="textCtrl AutoComplete" id="searchBar_users" />
+							<p class="explain">Separate names with a comma.</p>
+						</dd>
+					</dl>
+				
+					<dl class="ctrlUnit">
+						<dt><label for="searchBar_date">Newer Than:</label></dt>
+						<dd><input type="date" name="date" value="" class="textCtrl" id="searchBar_date" /></dd>
+					</dl>
+					
+					
+					<dl class="ctrlUnit">
+						<dt></dt>
+						<dd><ul>
+								
+									<li>
+	<label title="Search only Land"><input type="checkbox" name="type[resource_update][categories][]" value="3" checked="checked" /> Search this category only</label>
+
+<ul>
+	<li><label><input type="checkbox" name="type[resource_update][is_resource]" value="1" /> Search only resource descriptions</label>
+</ul></li>
+								
+						</ul></dd>
+					</dl>
+					
+				</div>
+				<!-- end block: secondaryControls -->
+				
+				<dl class="ctrlUnit submitUnit">
+					<dt></dt>
+					<dd>
+						<input type="submit" value="Search" class="button primary Tooltip" title="Find Now" />
+						<a href="search/" class="button moreOptions Tooltip" title="Advanced Search">More...</a>
+						<div class="Popup" id="commonSearches">
+							<a rel="Menu" class="button NoPopupGadget Tooltip" title="Useful Searches" data-tipclass="flipped"><span class="arrowWidget"></span></a>
+							<div class="Menu">
+								<div class="primaryContent menuHeader">
+									<h3>Useful Searches</h3>
+								</div>
+								<ul class="secondaryContent blockLinksList">
+									<!-- block: useful_searches -->
+									<li><a href="find-new/posts?recent=1" rel="nofollow">Recent Posts</a></li>
+									
+									<!-- end block: useful_searches -->
+								</ul>
+							</div>
+						</div>
+					</dd>
+				</dl>
+				
+			</div>
+			
+			<input type="hidden" name="_xfToken" value="" />
+		</form>		
+	</fieldset>
+	
+
+</div>
+		</li>
+	
+
+									
+								
+								
+								
+								</ul>
+								
+							
+							
+							
+								
+
+<div id="uix_searchMinimal">
+	<form action="index.php?search/search" method="post">
+		<i id="uix_searchMinimalClose" class="uix_icon uix_icon-close"  title="Close"></i>
+		<i id="uix_searchMinimalOptions" class="uix_icon uix_icon-cog" title="Options"></i>
+		<div id="uix_searchMinimalInput" >
+			<input type="search" name="keywords" value="" placeholder="Search..." results="0" />
+		</div>
+		<input type="hidden" name="_xfToken" value="" />
+	</form>
+</div>
+
+
+							
+									
+								
+						</div>
+					</div>
+	
+				<span class="helper"></span>
+					
+				</nav>
+			</div>
+		
+		</div>
+	</div>
+</div>
+	
+	
+</div>
+
+	
+	
+</header>
+
+<div id="content" class="resource_category">
+	
+	<div class="pageWidth">
+		<div class="pageContent">
+	
+			<!-- main content area -->
+			
+			
+			
+			
+
+			
+			
+			<div class="breadBoxTop  ">
+				
+				
+
+<nav>
+
+	
+	
+	
+		
+			
+		
+	
+
+	<fieldset class="breadcrumb">
+		<a href="misc/quick-navigation-menu" class="OverlayTrigger jumpMenuTrigger" data-cacheOverlay="true" title="Open quick navigation"><i class="uix_icon uix_icon-sitemap"></i><!--Jump to...--></a>
+			
+		<div class="boardTitle"><strong>BeamNG</strong></div>
+		
+		<span class="crumbs">
+			
+				<span class="crust homeCrumb" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="//www.beamng.com" class="crumb" rel="up" itemprop="url"><span itemprop="title"><i class="uix_icon uix_icon-home"></i></span></a>
+					<span class="arrow"><span></span></span>
+				</span>
+			
+			
+			
+				<span class="crust selectedTabCrumb" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a href="https://www.beamng.com/resources/" class="crumb" rel="up" itemprop="url"><span itemprop="title">Mods</span></a>
+					<span class="arrow"><span>&gt;</span></span>
+				</span>
+			
+			
+			
+				
+					<span class="crust" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+						<a href="https://www.beamng.com/resources/categories/vehicles.2/" class="crumb" rel="up" itemprop="url"><span itemprop="title">Vehicles</span></a>
+						<span class="arrow"><span>&gt;</span></span>
+					</span>
+				
+			
+		</span>
+	</fieldset>
+</nav>
+				
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+	
+			
+			
+				<div class="mainContainer_noSidebar">
+			
+					
+						<!--[if lt IE 8]>
+							<p class="importantMessage">You are using an out of date browser. It  may not display this or other websites correctly.<br />You should upgrade or use an <a href="https://www.google.com/chrome/browser/" target="_blank">alternative browser</a>.</p>
+						<![endif]-->
+						
+						
+						
+						
+	
+
+		
+		
+		
+
+		<div class="PanelScroller Notices" data-vertical="0" data-speed="400" data-interval="4000">
+			<div class="scrollContainer">
+				<div class="PanelContainer">
+					<ol class="Panels">
+						
+							<li class="panel Notice DismissParent notice_4 " data-notice="4">
+	
+	<div class="baseHtml noticeContent"><a href="https://documentation.beamng.com/tutorials/mods/installing-mods/" style="margin:auto;"><img src="https://media-cdn.beamng.com/lda5A6JTxZ3sKfh1" style="margin:0px auto; vertical-align:middle; display:block; max-width: 100%; max-height: 75px;"></img></a></div>
+	
+	
+</li>
+						
+					</ol>
+				</div>
+			</div>
+
+			
+		</div>
+
+	
+
+	
+						
+						
+						
+						
+						
+
+						
+						
+											
+								<!-- h1 title, description -->
+								<div class="titleBar">
+									
+									<h1>Land</h1>
+									
+									<p id="pageDescription" class="muted baseHtml">Vehicles with wheels</p>
+								</div>
+							
+						
+						
+						
+						
+						
+						<!-- main template -->
+						
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="resourceListBlock">
+
+<div class="resourceListSidebar">
+	<div class="secondaryContent categoryList">
+		<h3>Categories</h3>
+		<ol>
+
+
+
+	<li class="">
+		<a href="resources/categories/vehicles.2/" title="Vehicles and drivable things" class="Tooltip" data-tipclass="resourceCategoryTooltip">Vehicles</a>
+		<span class="count">2,014</span>
+	</li>
+	
+		<ol>
+
+
+
+	<li class="selected">
+		<a href="resources/categories/land.3/" title="Vehicles with wheels" class="Tooltip" data-tipclass="resourceCategoryTooltip">Land</a>
+		<span class="count">509</span>
+	</li>
+	
+		
+	
+
+
+
+
+	<li class="">
+		<a href="resources/categories/air.4/" title="Flying things" class="Tooltip" data-tipclass="resourceCategoryTooltip">Air</a>
+		<span class="count">24</span>
+	</li>
+	
+
+
+
+
+	<li class="">
+		<a href="resources/categories/props.5/" title="Objects that are not steerable vehicles" class="Tooltip" data-tipclass="resourceCategoryTooltip">Props</a>
+		<span class="count">248</span>
+	</li>
+	
+
+
+
+
+	<li class="">
+		<a href="resources/categories/boats.6/" >Boats</a>
+		<span class="count">13</span>
+	</li>
+	
+
+
+
+
+	<li class="">
+		<a href="resources/categories/configurations.14/" >Configurations</a>
+		<span class="count">1,220</span>
+	</li>
+	
+
+
+</ol>
+	
+
+
+
+
+	<li class="">
+		<a href="resources/categories/scenarios.8/" >Scenarios</a>
+		<span class="count">333</span>
+	</li>
+	
+
+
+
+
+	<li class="">
+		<a href="resources/categories/terrains-levels-maps.9/" title="Environments to drive in" class="Tooltip" data-tipclass="resourceCategoryTooltip">Terrains, Levels, Maps</a>
+		<span class="count">986</span>
+	</li>
+	
+
+
+
+
+	<li class="">
+		<a href="resources/categories/user-interface-apps.10/" >User Interface Apps</a>
+		<span class="count">387</span>
+	</li>
+	
+
+
+
+
+	<li class="">
+		<a href="resources/categories/sounds.13/" title="Audio mods" class="Tooltip" data-tipclass="resourceCategoryTooltip">Sounds</a>
+		<span class="count">303</span>
+	</li>
+	
+
+
+
+
+	<li class="">
+		<a href="resources/categories/license-plates.15/" >License Plates</a>
+		<span class="count">451</span>
+	</li>
+	
+
+
+
+
+	<li class="">
+		<a href="resources/categories/track-builder.17/" title="Tracks created by the Track Builder" class="Tooltip" data-tipclass="resourceCategoryTooltip">Track Builder</a>
+		<span class="count">108</span>
+	</li>
+	
+
+
+
+
+	<li class="">
+		<a href="resources/categories/mods-of-mods.7/" >Mods of Mods</a>
+		<span class="count">3,832</span>
+	</li>
+	
+
+
+
+
+	<li class="">
+		<a href="resources/categories/skins.12/" >Skins</a>
+		<span class="count">2,040</span>
+	</li>
+	
+
+
+
+
+	<li class="">
+		<a href="resources/categories/automation.16/" title="Automation vehicles" class="Tooltip" data-tipclass="resourceCategoryTooltip">Automation</a>
+		<span class="count">21,193</span>
+	</li>
+	
+
+
+</ol>
+	</div>
+
+	
+		<div class="secondaryContent miniResourceList">
+			<h3><a href="resources/categories/land.3/?order=rating_weighted" class="concealed">Top Resources</a></h3>
+			
+<ol>
+
+	<li class="visible">
+		<div class="resourceImage">
+			
+				<a href="resources/2020-hirochi-ccf.29318/" class="resourceIcon"><img src="data/resource_icons/29/29318.jpg?1715185492" alt="" /></a>
+			
+		</div>
+		<div class="resourceBody">
+			<a href="resources/2020-hirochi-ccf.29318/" class="resourceTitle">2020 Hirochi CCF</a>
+			<div class="tagLine">A small roadster with big ambitions. Includes a functional screen! <span class="author">- by Theo Wilkinson</span></div>
+			<div class="lastUpdate">Updated: <span class="DateTime" title="Aug 11, 2026 at 11:16 AM">Aug 11, 2026</span></div>
+		</div>
+	</li>
+
+	<li class="visible">
+		<div class="resourceImage">
+			
+				<a href="resources/gavril-vertex-na2.13061/" class="resourceIcon"><img src="data/resource_icons/13/13061.jpg?1661216959" alt="" /></a>
+			
+		</div>
+		<div class="resourceBody">
+			<a href="resources/gavril-vertex-na2.13061/" class="resourceTitle">Gavril Vertex NA2</a>
+			<div class="tagLine">Completely reworked. The most customizable vehicle in the game! 106 configs and 1300 parts to choose <span class="author">- by Inn0centJok3r</span></div>
+			<div class="lastUpdate">Updated: <span class="DateTime" title="Sep 30, 2026 at 11:28 AM">Sep 30, 2026</span></div>
+		</div>
+	</li>
+
+	<li class="visible">
+		<div class="resourceImage">
+			
+				<a href="resources/1994-etk-k-series.20482/" class="resourceIcon"><img src="data/resource_icons/20/20482.jpg?1703096912" alt="" /></a>
+			
+		</div>
+		<div class="resourceBody">
+			<a href="resources/1994-etk-k-series.20482/" class="resourceTitle">1994 ETK K-Series</a>
+			<div class="tagLine">Sleek compact roadster from the late 90s. <span class="author">- by LucasBE</span></div>
+			<div class="lastUpdate">Updated: <span class="DateTime" title="Jun 20, 2025 at 10:00 AM">Jun 20, 2025</span></div>
+		</div>
+	</li>
+
+	<li class="visible">
+		<div class="resourceImage">
+			
+				<a href="resources/2022-procyon-centauri.24393/" class="resourceIcon"><img src="data/resource_icons/24/24393.jpg?1668201317" alt="" /></a>
+			
+		</div>
+		<div class="resourceBody">
+			<a href="resources/2022-procyon-centauri.24393/" class="resourceTitle">2022 Procyon Centauri</a>
+			<div class="tagLine">A versatile full-size SUV capable of lots of things. <span class="author">- by Finn Wilkinson</span></div>
+			<div class="lastUpdate">Updated: <span class="DateTime" title="Aug 13, 2026 at 11:09 AM">Aug 13, 2026</span></div>
+		</div>
+	</li>
+
+	<li class="visible">
+		<div class="resourceImage">
+			
+				<a href="resources/satsuma-210-58.2009/" class="resourceIcon"><img src="data/resource_icons/2/2009.jpg?1489792815" alt="" /></a>
+			
+		</div>
+		<div class="resourceBody">
+			<a href="resources/satsuma-210-58.2009/" class="resourceTitle">Satsuma 210 &#039;58</a>
+			<div class="tagLine">New classic 50&#039;s Japanese  car for the game <span class="author">- by mike94</span></div>
+			<div class="lastUpdate">Updated: <span class="DateTime" title="Dec 23, 2018 at 12:02 PM">Dec 23, 2018</span></div>
+		</div>
+	</li>
+
+</ol>
+		</div>
+	
+</div>
+
+<div class="resourceListMain">
+	
+		<div class="section">
+			<h2 class="textHeading">
+				<a class="viewAllFeatured" href="resources/categories/land.3/featured">View All</a>
+				Featured Resources
+			</h2>
+			
+
+<ol class="featuredResourceList">
+
+	<li class="featuredResource">
+		<div class="resourceImage">
+			
+				<a href="resources/hirochi-mistral.23527/" class="resourceIcon"><img src="data/resource_icons/23/23527.jpg?1660562656" alt="" /></a>
+			
+		</div>
+		<div class="resourceInfo">
+			<h3 class="title"><a href="resources/hirochi-mistral.23527/">Hirochi Mistral</a></h3>
+			<div class="tagLine muted">The Covet-fighter for a new generation of Covet-buyers</div>
+			<div class="details muted"><a href="members/kajzer.397191/" class="username" dir="auto">Kajzer</a>,
+				<a href="resources/hirochi-mistral.23527/" class="faint"><span class="DateTime" title="Aug 15, 2022 at 4:43 PM">Aug 15, 2022</span></a>
+			</div>
+		</div>
+	</li>
+
+</ol>
+		</div>
+	
+
+	<div class="section">
+
+	
+	
+	<div class="actionFilterRow">
+<div class="resourceHeaders">
+		
+
+		<div class="extraLinks">
+			
+			
+				<div class="Popup JsOnly">
+	<a rel="Menu">Filters</a>
+	<div class="Menu resourceFilterMenu" id="ResourceFilterMenu"
+		data-contentsrc="resources/filter-menu?resource_category_id=3"
+		data-contentdest="#ResourceFilterMenu > .primaryContent"
+		data-insertfn="replaceAll"
+	>
+		<div class="primaryContent">Loading...</div>
+	</div>
+</div>
+			
+		</div>
+	<ol class="tabs">
+			<li class="active"><a href="resources/categories/land.3/">Last Update</a></li>
+			<li class=""><a href="resources/categories/land.3/?order=resource_date">Submission Date</a></li>
+			<li class=""><a href="resources/categories/land.3/?order=rating_weighted">Rating</a></li>
+			<li class=""><a href="resources/categories/land.3/?order=download_count">Downloads</a></li>
+			<li class=""><a href="resources/categories/land.3/?order=title">Title</a></li>
+		</ol>
+</div>
+         </div>
+
+	<form action="resources/inline-mod/switch" method="post"
+		class="InlineModForm"
+		data-cookieName="resources"
+		data-controls="#InlineModControls"
+		data-imodOptions="#ModerationSelect option">
+
+		<ol class="resourceList">
+		
+			
+			
+				<li class="resourceListItem visible " id="resource-39641">
+	<div class="listBlock resourceImage">
+		<div class="listBlockInner">
+			
+				<a href="resources/tyrelabs.39641/" class="resourceIcon"><img src="data/resource_icons/39/39641.jpg?1791231808" alt="" /></a>
+				<a href="members/giogoesinsane.486434/" class="avatar Av486434s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/486/486434.jpg?1788269620" width="48" height="48" alt="giogoesinsane" /></a>
+			
+		</div>
+	</div>
+	<div class="listBlock main">
+		<div class="listBlockInner">
+			
+			
+			
+			
+			<h3 class="title">
+				
+				<a href="resources/categories/land.3/?prefix_id=4" class="prefixLink" title="Show only resources prefixed by 'Beta'."><span class="prefix prefixWipBeta">Beta</span> </a><a
+				href="resources/tyrelabs.39641/">Tyrelabs</a>
+				<span class="version">1.0</span>
+			</h3>
+			<div class="resourceDetails muted">
+				<a href="resources/authors/giogoesinsane.486434/">giogoesinsane</a>, 
+				<a href="resources/tyrelabs.39641/" class="faint"><abbr class="DateTime" data-time="1791552358" data-diff="229168" data-datestring="Oct 9, 2026" data-timestring="3:25 PM">Oct 9, 2026 at 3:25 PM</abbr></a>
+			</div>
+			<div class="tagLine">
+				
+					plug and play
+				
+			</div>
+		</div>
+	</div>
+	<div class="listBlock resourceStats">
+		<div class="listBlockInner">
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="1.13">
+					 <span class="star Full"></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span
+					><span class="star "></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">1.125</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint">8 ratings</span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<div class="pairsJustified">
+				
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>4,354</dd></dl>
+<dl class="resourceDownloads"><dt>Subscriptions:</dt> <dd>3,559</dd></dl>
+
+				<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="resources/tyrelabs.39641/updates" class="concealed"><abbr class="DateTime" data-time="1791552358" data-diff="229168" data-datestring="Oct 9, 2026" data-timestring="3:25 PM">Oct 9, 2026 at 3:25 PM</abbr></a></dd></dl>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+			
+				<li class="resourceListItem visible " id="resource-38816">
+	<div class="listBlock resourceImage">
+		<div class="listBlockInner">
+			
+				<a href="resources/ibishu-expansion.38816/" class="resourceIcon"><img src="data/resource_icons/38/38816.jpg?1785552744" alt="" /></a>
+				<a href="members/bugster.499407/" class="avatar Av499407s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/499/499407.jpg?1737563613" width="48" height="48" alt="Bugster" /></a>
+			
+		</div>
+	</div>
+	<div class="listBlock main">
+		<div class="listBlockInner">
+			
+			
+			
+			
+			<h3 class="title">
+				
+				<a href="resources/categories/land.3/?prefix_id=4" class="prefixLink" title="Show only resources prefixed by 'Beta'."><span class="prefix prefixWipBeta">Beta</span> </a><a
+				href="resources/ibishu-expansion.38816/">Ibishu Expansion</a>
+				<span class="version">V1.0.3.14</span>
+			</h3>
+			<div class="resourceDetails muted">
+				<a href="resources/authors/bugster.499407/">Bugster</a>, 
+				<a href="resources/ibishu-expansion.38816/" class="faint"><span class="DateTime" title="Aug 6, 2026 at 3:26 PM">Aug 6, 2026</span></a>
+			</div>
+			<div class="tagLine">
+				
+					Extra content for the existing lineup of ibishu cars
+				
+			</div>
+		</div>
+	</div>
+	<div class="listBlock resourceStats">
+		<div class="listBlockInner">
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="4.00">
+					 <span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star "></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">4</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint">2 ratings</span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<div class="pairsJustified">
+				
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>17,094</dd></dl>
+<dl class="resourceDownloads"><dt>Subscriptions:</dt> <dd>9,826</dd></dl>
+
+				<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="resources/ibishu-expansion.38816/updates" class="concealed"><abbr class="DateTime" data-time="1791545894" data-diff="235632" data-datestring="Oct 9, 2026" data-timestring="1:38 PM">Oct 9, 2026 at 1:38 PM</abbr></a></dd></dl>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+			
+				<li class="resourceListItem visible " id="resource-39687">
+	<div class="listBlock resourceImage">
+		<div class="listBlockInner">
+			
+				<a href="resources/etk-800-experimental.39687/" class="resourceIcon"><img src="styles/uix/xenresource/resource_icon.png" alt="" /></a>
+				<a href="members/chyperlord.839228/" class="avatar Av839228s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/839/839228.jpg?1791464713" width="48" height="48" alt="ChyperLord" /></a>
+			
+		</div>
+	</div>
+	<div class="listBlock main">
+		<div class="listBlockInner">
+			
+			
+			
+			
+			<h3 class="title">
+				
+				<a href="resources/categories/land.3/?prefix_id=6" class="prefixLink" title="Show only resources prefixed by 'Experimental'."><span class="prefix prefixExperiment">Experimental</span> </a><a
+				href="resources/etk-800-experimental.39687/">ETK-800 Experimental</a>
+				<span class="version">0.1</span>
+			</h3>
+			<div class="resourceDetails muted">
+				<a href="resources/authors/chyperlord.839228/">ChyperLord</a>, 
+				<a href="resources/etk-800-experimental.39687/" class="faint"><abbr class="DateTime" data-time="1791539605" data-diff="241921" data-datestring="Oct 9, 2026" data-timestring="11:53 AM">Oct 9, 2026 at 11:53 AM</abbr></a>
+			</div>
+			<div class="tagLine">
+				
+					AI-Powered V10, VGT diesel and BEV
+				
+			</div>
+		</div>
+	</div>
+	<div class="listBlock resourceStats">
+		<div class="listBlockInner">
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="4.00">
+					 <span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star "></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">4</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint">1 rating</span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<div class="pairsJustified">
+				
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>845</dd></dl>
+<dl class="resourceDownloads"><dt>Subscriptions:</dt> <dd>706</dd></dl>
+
+				<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="resources/etk-800-experimental.39687/updates" class="concealed"><abbr class="DateTime" data-time="1791539605" data-diff="241921" data-datestring="Oct 9, 2026" data-timestring="11:53 AM">Oct 9, 2026 at 11:53 AM</abbr></a></dd></dl>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+			
+				<li class="resourceListItem visible " id="resource-39636">
+	<div class="listBlock resourceImage">
+		<div class="listBlockInner">
+			
+				<a href="resources/banana-car.39636/" class="resourceIcon"><img src="data/resource_icons/39/39636.jpg?1791166373" alt="" /></a>
+				<a href="members/smile_seeker.492060/" class="avatar Av492060s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/492/492060.jpg?1746491035" width="48" height="48" alt="Smile_Seeker" /></a>
+			
+		</div>
+	</div>
+	<div class="listBlock main">
+		<div class="listBlockInner">
+			
+			
+			
+			
+			<h3 class="title">
+				
+				<a
+				href="resources/banana-car.39636/">Banana Car</a>
+				<span class="version">1.0</span>
+			</h3>
+			<div class="resourceDetails muted">
+				<a href="resources/authors/smile_seeker.492060/">Smile_Seeker</a>, 
+				<a href="resources/banana-car.39636/" class="faint"><span class="DateTime" title="Oct 5, 2026 at 3:16 PM">Oct 5, 2026</span></a>
+			</div>
+			<div class="tagLine">
+				
+					super cool banana car
+				
+			</div>
+		</div>
+	</div>
+	<div class="listBlock resourceStats">
+		<div class="listBlockInner">
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="4.80">
+					 <span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Half"></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">4.8</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint">5 ratings</span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<div class="pairsJustified">
+				
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>4,080</dd></dl>
+<dl class="resourceDownloads"><dt>Subscriptions:</dt> <dd>3,162</dd></dl>
+
+				<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="resources/banana-car.39636/updates" class="concealed"><span class="DateTime" title="Oct 5, 2026 at 3:16 PM">Oct 5, 2026</span></a></dd></dl>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+			
+				<li class="resourceListItem visible " id="resource-39099">
+	<div class="listBlock resourceImage">
+		<div class="listBlockInner">
+			
+				<a href="resources/ms-miramar.39099/" class="resourceIcon"><img src="data/resource_icons/39/39099.jpg?1786827127" alt="" /></a>
+				<a href="members/macca_.815202/" class="avatar Av815202s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/815/815202.jpg?1785185926" width="48" height="48" alt="Macca_" /></a>
+			
+		</div>
+	</div>
+	<div class="listBlock main">
+		<div class="listBlockInner">
+			
+			
+			
+			
+			<h3 class="title">
+				
+				<a href="resources/categories/land.3/?prefix_id=4" class="prefixLink" title="Show only resources prefixed by 'Beta'."><span class="prefix prefixWipBeta">Beta</span> </a><a
+				href="resources/ms-miramar.39099/">M&#039;s Miramar</a>
+				<span class="version">1.53</span>
+			</h3>
+			<div class="resourceDetails muted">
+				<a href="resources/authors/macca_.815202/">Macca_</a>, 
+				<a href="resources/ms-miramar.39099/" class="faint"><span class="DateTime" title="Aug 19, 2026 at 11:11 AM">Aug 19, 2026</span></a>
+			</div>
+			<div class="tagLine">
+				
+					Performance parts and a high-revving engine.
+				
+			</div>
+		</div>
+	</div>
+	<div class="listBlock resourceStats">
+		<div class="listBlockInner">
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="5.00">
+					 <span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">5</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint">2 ratings</span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<div class="pairsJustified">
+				
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>13,238</dd></dl>
+<dl class="resourceDownloads"><dt>Subscriptions:</dt> <dd>9,202</dd></dl>
+
+				<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="resources/ms-miramar.39099/updates" class="concealed"><span class="DateTime" title="Oct 5, 2026 at 11:25 AM">Oct 5, 2026</span></a></dd></dl>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+			
+				<li class="resourceListItem visible " id="resource-39452">
+	<div class="listBlock resourceImage">
+		<div class="listBlockInner">
+			
+				<a href="resources/hirochi-accent.39452/" class="resourceIcon"><img src="data/resource_icons/39/39452.jpg?1789582758" alt="" /></a>
+				<a href="members/mxmxrr.487732/" class="avatar Av487732s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/487/487732.jpg?1789494987" width="48" height="48" alt="mxmxrr" /></a>
+			
+		</div>
+	</div>
+	<div class="listBlock main">
+		<div class="listBlockInner">
+			
+			
+			
+			
+			<h3 class="title">
+				
+				<a href="resources/categories/land.3/?prefix_id=4" class="prefixLink" title="Show only resources prefixed by 'Beta'."><span class="prefix prefixWipBeta">Beta</span> </a><a
+				href="resources/hirochi-accent.39452/">Hirochi Accent</a>
+				<span class="version">1.3.0</span>
+			</h3>
+			<div class="resourceDetails muted">
+				<a href="resources/authors/mxmxrr.487732/">mxmxrr</a>, 
+				<a href="resources/hirochi-accent.39452/" class="faint"><span class="DateTime" title="Sep 22, 2026 at 12:58 PM">Sep 22, 2026</span></a>
+			</div>
+			<div class="tagLine">
+				
+					FCV Expansion Package with Various Body Styles and Technologies
+				
+			</div>
+		</div>
+	</div>
+	<div class="listBlock resourceStats">
+		<div class="listBlockInner">
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="4.06">
+					 <span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star "></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">4.05882</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint">34 ratings</span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<div class="pairsJustified">
+				
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>17,486</dd></dl>
+<dl class="resourceDownloads"><dt>Subscriptions:</dt> <dd>10,635</dd></dl>
+
+				<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="resources/hirochi-accent.39452/updates" class="concealed"><span class="DateTime" title="Oct 2, 2026 at 11:24 AM">Oct 2, 2026</span></a></dd></dl>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+			
+				<li class="resourceListItem visible " id="resource-36664">
+	<div class="listBlock resourceImage">
+		<div class="listBlockInner">
+			
+				<a href="resources/aw-type-1.36664/" class="resourceIcon"><img src="data/resource_icons/36/36664.jpg?1765821114" alt="" /></a>
+				<a href="members/mrx13415.51088/" class="avatar Av51088s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/51/51088.jpg?1630841538" width="48" height="48" alt="MrX13415" /></a>
+			
+		</div>
+	</div>
+	<div class="listBlock main">
+		<div class="listBlockInner">
+			
+			
+			
+			
+			<h3 class="title">
+				
+				<a href="resources/categories/land.3/?prefix_id=4" class="prefixLink" title="Show only resources prefixed by 'Beta'."><span class="prefix prefixWipBeta">Beta</span> </a><a
+				href="resources/aw-type-1.36664/">AW Type 1</a>
+				<span class="version">3.1</span>
+			</h3>
+			<div class="resourceDetails muted">
+				<a href="resources/authors/mrx13415.51088/">MrX13415</a>, 
+				<a href="resources/aw-type-1.36664/" class="faint"><span class="DateTime" title="Dec 17, 2025 at 12:45 PM">Dec 17, 2025</span></a>
+			</div>
+			<div class="tagLine">
+				
+					Iconic air-cooled, rear-engine small family car from 1963
+				
+			</div>
+		</div>
+	</div>
+	<div class="listBlock resourceStats">
+		<div class="listBlockInner">
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="4.78">
+					 <span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Half"></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">4.78125</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint">64 ratings</span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<div class="pairsJustified">
+				
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>223,026</dd></dl>
+<dl class="resourceDownloads"><dt>Subscriptions:</dt> <dd>113,848</dd></dl>
+
+				<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="resources/aw-type-1.36664/updates" class="concealed"><span class="DateTime" title="Oct 2, 2026 at 11:19 AM">Oct 2, 2026</span></a></dd></dl>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+			
+				<li class="resourceListItem visible " id="resource-11142">
+	<div class="listBlock resourceImage">
+		<div class="listBlockInner">
+			
+				<a href="resources/dmm512-diesel-locomotive.11142/" class="resourceIcon"><img src="data/resource_icons/11/11142.jpg?1580577094" alt="" /></a>
+				<a href="members/zagdima.38553/" class="avatar Av38553s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/38/38553.jpg?1534148590" width="48" height="48" alt="zagdima" /></a>
+			
+		</div>
+	</div>
+	<div class="listBlock main">
+		<div class="listBlockInner">
+			
+			
+			
+			
+			<h3 class="title">
+				
+				<a
+				href="resources/dmm512-diesel-locomotive.11142/">DMM512 Diesel-Locomotive</a>
+				<span class="version">1.3.2</span>
+			</h3>
+			<div class="resourceDetails muted">
+				<a href="resources/authors/zagdima.38553/">zagdima</a>, 
+				<a href="resources/dmm512-diesel-locomotive.11142/" class="faint"><span class="DateTime" title="Feb 4, 2020 at 10:57 AM">Feb 4, 2020</span></a>
+			</div>
+			<div class="tagLine">
+				
+					Old Diesel Locomotive
+				
+			</div>
+		</div>
+	</div>
+	<div class="listBlock resourceStats">
+		<div class="listBlockInner">
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="4.48">
+					 <span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star "></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">4.48</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint">50 ratings</span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<div class="pairsJustified">
+				
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>370,338</dd></dl>
+<dl class="resourceDownloads"><dt>Subscriptions:</dt> <dd>140,044</dd></dl>
+
+				<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="resources/dmm512-diesel-locomotive.11142/updates" class="concealed"><span class="DateTime" title="Sep 30, 2026 at 3:12 PM">Sep 30, 2026</span></a></dd></dl>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+			
+				<li class="resourceListItem visible " id="resource-13061">
+	<div class="listBlock resourceImage">
+		<div class="listBlockInner">
+			
+				<a href="resources/gavril-vertex-na2.13061/" class="resourceIcon"><img src="data/resource_icons/13/13061.jpg?1661216959" alt="" /></a>
+				<a href="members/inn0centjok3r.318168/" class="avatar Av318168s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/318/318168.jpg?1790100953" width="48" height="48" alt="Inn0centJok3r" /></a>
+			
+		</div>
+	</div>
+	<div class="listBlock main">
+		<div class="listBlockInner">
+			
+			
+			
+			
+			<h3 class="title">
+				
+				<a
+				href="resources/gavril-vertex-na2.13061/">Gavril Vertex NA2</a>
+				<span class="version">3.71 Rework</span>
+			</h3>
+			<div class="resourceDetails muted">
+				<a href="resources/authors/inn0centjok3r.318168/">Inn0centJok3r</a>, 
+				<a href="resources/gavril-vertex-na2.13061/" class="faint"><span class="DateTime" title="Jun 8, 2020 at 9:32 AM">Jun 8, 2020</span></a>
+			</div>
+			<div class="tagLine">
+				
+					Completely reworked. The most customizable vehicle in the game! 106 configs and 1300 parts to choose
+				
+			</div>
+		</div>
+	</div>
+	<div class="listBlock resourceStats">
+		<div class="listBlockInner">
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="4.94">
+					 <span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Half"></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">4.94227</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint">485 ratings</span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<div class="pairsJustified">
+				
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>2,888,007</dd></dl>
+<dl class="resourceDownloads"><dt>Subscriptions:</dt> <dd>893,642</dd></dl>
+
+				<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="resources/gavril-vertex-na2.13061/updates" class="concealed"><span class="DateTime" title="Sep 30, 2026 at 11:28 AM">Sep 30, 2026</span></a></dd></dl>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+			
+				<li class="resourceListItem visible " id="resource-39574">
+	<div class="listBlock resourceImage">
+		<div class="listBlockInner">
+			
+				<a href="resources/off-road-trailers.39574/" class="resourceIcon"><img src="data/resource_icons/39/39574.jpg?1790672554" alt="" /></a>
+				<a href="members/dncsy94.23903/" class="avatar Av23903s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/23/23903.jpg?1790697956" width="48" height="48" alt="DNCSY94" /></a>
+			
+		</div>
+	</div>
+	<div class="listBlock main">
+		<div class="listBlockInner">
+			
+			
+			
+			
+			<h3 class="title">
+				
+				<a href="resources/categories/land.3/?prefix_id=4" class="prefixLink" title="Show only resources prefixed by 'Beta'."><span class="prefix prefixWipBeta">Beta</span> </a><a
+				href="resources/off-road-trailers.39574/">Off-Road Trailers</a>
+				<span class="version">1.0</span>
+			</h3>
+			<div class="resourceDetails muted">
+				<a href="resources/authors/dncsy94.23903/">DNCSY94</a>, 
+				<a href="resources/off-road-trailers.39574/" class="faint"><span class="DateTime" title="Sep 29, 2026 at 3:39 PM">Sep 29, 2026</span></a>
+			</div>
+			<div class="tagLine">
+				
+					Lifted, bar grip versions of the short flatbed and log trailer
+				
+			</div>
+		</div>
+	</div>
+	<div class="listBlock resourceStats">
+		<div class="listBlockInner">
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="5.00">
+					 <span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">5</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint">2 ratings</span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<div class="pairsJustified">
+				
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>2,105</dd></dl>
+<dl class="resourceDownloads"><dt>Subscriptions:</dt> <dd>1,629</dd></dl>
+
+				<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="resources/off-road-trailers.39574/updates" class="concealed"><span class="DateTime" title="Sep 29, 2026 at 3:39 PM">Sep 29, 2026</span></a></dd></dl>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+			
+				<li class="resourceListItem visible " id="resource-35232">
+	<div class="listBlock resourceImage">
+		<div class="listBlockInner">
+			
+				<a href="resources/1972-autobello-aria.35232/" class="resourceIcon"><img src="data/resource_icons/35/35232.jpg?1752621700" alt="" /></a>
+				<a href="members/kajzer.397191/" class="avatar Av397191s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/397/397191.jpg?1731351618" width="48" height="48" alt="Kajzer" /></a>
+			
+		</div>
+	</div>
+	<div class="listBlock main">
+		<div class="listBlockInner">
+			
+			
+			
+			
+			<h3 class="title">
+				
+				<a
+				href="resources/1972-autobello-aria.35232/">1972 Autobello Aria</a>
+				<span class="version">1.0.4</span>
+			</h3>
+			<div class="resourceDetails muted">
+				<a href="resources/authors/kajzer.397191/">Kajzer</a>, 
+				<a href="resources/1972-autobello-aria.35232/" class="faint"><span class="DateTime" title="Jul 16, 2025 at 12:11 PM">Jul 16, 2025</span></a>
+			</div>
+			<div class="tagLine">
+				
+					The song of innovation
+				
+			</div>
+		</div>
+	</div>
+	<div class="listBlock resourceStats">
+		<div class="listBlockInner">
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="4.98">
+					 <span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Half"></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">4.97656</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint">128 ratings</span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<div class="pairsJustified">
+				
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>325,133</dd></dl>
+<dl class="resourceDownloads"><dt>Subscriptions:</dt> <dd>152,294</dd></dl>
+
+				<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="resources/1972-autobello-aria.35232/updates" class="concealed"><span class="DateTime" title="Sep 28, 2026 at 12:55 PM">Sep 28, 2026</span></a></dd></dl>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+			
+				<li class="resourceListItem visible " id="resource-33927">
+	<div class="listBlock resourceImage">
+		<div class="listBlockInner">
+			
+				<a href="resources/hirochi-outlaw.33927/" class="resourceIcon"><img src="data/resource_icons/33/33927.jpg?1741996824" alt="" /></a>
+				<a href="members/thatjackguy.376/" class="avatar Av376s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/0/376.jpg?1613700657" width="48" height="48" alt="thatjackguy" /></a>
+			
+		</div>
+	</div>
+	<div class="listBlock main">
+		<div class="listBlockInner">
+			
+			
+			
+			
+			<h3 class="title">
+				
+				<a
+				href="resources/hirochi-outlaw.33927/">Hirochi Outlaw</a>
+				<span class="version">1.18</span>
+			</h3>
+			<div class="resourceDetails muted">
+				<a href="resources/authors/thatjackguy.376/">thatjackguy</a>, 
+				<a href="resources/hirochi-outlaw.33927/" class="faint"><span class="DateTime" title="Mar 14, 2025 at 10:32 AM">Mar 14, 2025</span></a>
+			</div>
+			<div class="tagLine">
+				
+					Budget 90&#039;s 2-wheeled fun
+				
+			</div>
+		</div>
+	</div>
+	<div class="listBlock resourceStats">
+		<div class="listBlockInner">
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="4.78">
+					 <span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Half"></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">4.78417</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint">139 ratings</span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<div class="pairsJustified">
+				
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>917,399</dd></dl>
+<dl class="resourceDownloads"><dt>Subscriptions:</dt> <dd>402,679</dd></dl>
+
+				<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="resources/hirochi-outlaw.33927/updates" class="concealed"><span class="DateTime" title="Sep 28, 2026 at 12:53 PM">Sep 28, 2026</span></a></dd></dl>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+			
+				<li class="resourceListItem visible " id="resource-39430">
+	<div class="listBlock resourceImage">
+		<div class="listBlockInner">
+			
+				<a href="resources/gavril-barstow-atlas.39430/" class="resourceIcon"><img src="data/resource_icons/39/39430.jpg?1789304723" alt="" /></a>
+				<a href="members/reghint.816478/" class="avatar Av816478s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/816/816478.jpg?1785492459" width="48" height="48" alt="RegHint" /></a>
+			
+		</div>
+	</div>
+	<div class="listBlock main">
+		<div class="listBlockInner">
+			
+			
+			
+			
+			<h3 class="title">
+				
+				<a href="resources/categories/land.3/?prefix_id=4" class="prefixLink" title="Show only resources prefixed by 'Beta'."><span class="prefix prefixWipBeta">Beta</span> </a><a
+				href="resources/gavril-barstow-atlas.39430/">Gavril Barstow Atlas</a>
+				<span class="version">1.2</span>
+			</h3>
+			<div class="resourceDetails muted">
+				<a href="resources/authors/reghint.816478/">RegHint</a>, 
+				<a href="resources/gavril-barstow-atlas.39430/" class="faint"><span class="DateTime" title="Sep 14, 2026 at 11:49 AM">Sep 14, 2026</span></a>
+			</div>
+			<div class="tagLine">
+				
+					A tuning pack for your Barstow that turns it into a youthful muscle car
+				
+			</div>
+		</div>
+	</div>
+	<div class="listBlock resourceStats">
+		<div class="listBlockInner">
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="4.86">
+					 <span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Half"></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">4.86364</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint">22 ratings</span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<div class="pairsJustified">
+				
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>41,053</dd></dl>
+<dl class="resourceDownloads"><dt>Subscriptions:</dt> <dd>27,719</dd></dl>
+
+				<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="resources/gavril-barstow-atlas.39430/updates" class="concealed"><span class="DateTime" title="Sep 25, 2026 at 3:08 PM">Sep 25, 2026</span></a></dd></dl>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+			
+				<li class="resourceListItem visible " id="resource-37292">
+	<div class="listBlock resourceImage">
+		<div class="listBlockInner">
+			
+				<a href="resources/seoil-framebody-pack.37292/" class="resourceIcon"><img src="data/resource_icons/37/37292.jpg?1771768124" alt="" /></a>
+				<a href="members/urbanmaid.138434/" class="avatar Av138434s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/138/138434.jpg?1672713539" width="48" height="48" alt="Urbanmaid" /></a>
+			
+		</div>
+	</div>
+	<div class="listBlock main">
+		<div class="listBlockInner">
+			
+			
+			
+			
+			<h3 class="title">
+				
+				<a href="resources/categories/land.3/?prefix_id=4" class="prefixLink" title="Show only resources prefixed by 'Beta'."><span class="prefix prefixWipBeta">Beta</span> </a><a
+				href="resources/seoil-framebody-pack.37292/">Seoil Framebody Pack</a>
+				<span class="version">26.09.23</span>
+			</h3>
+			<div class="resourceDetails muted">
+				<a href="resources/authors/urbanmaid.138434/">Urbanmaid</a>, 
+				<a href="resources/seoil-framebody-pack.37292/" class="faint"><span class="DateTime" title="Feb 23, 2026 at 10:16 AM">Feb 23, 2026</span></a>
+			</div>
+			<div class="tagLine">
+				
+					The proof of durability
+				
+			</div>
+		</div>
+	</div>
+	<div class="listBlock resourceStats">
+		<div class="listBlockInner">
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="4.13">
+					 <span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star "></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">4.125</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint">64 ratings</span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<div class="pairsJustified">
+				
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>108,371</dd></dl>
+<dl class="resourceDownloads"><dt>Subscriptions:</dt> <dd>38,760</dd></dl>
+
+				<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="resources/seoil-framebody-pack.37292/updates" class="concealed"><span class="DateTime" title="Sep 24, 2026 at 11:30 AM">Sep 24, 2026</span></a></dd></dl>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+			
+				<li class="resourceListItem visible " id="resource-38729">
+	<div class="listBlock resourceImage">
+		<div class="listBlockInner">
+			
+				<a href="resources/gavril-ugo.38729/" class="resourceIcon"><img src="data/resource_icons/38/38729.jpg?1785101864" alt="" /></a>
+				<a href="members/peanutz77.635551/" class="avatar Av635551s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/635/635551.jpg?1784917415" width="48" height="48" alt="Peanutz77" /></a>
+			
+		</div>
+	</div>
+	<div class="listBlock main">
+		<div class="listBlockInner">
+			
+			
+			
+			
+			<h3 class="title">
+				
+				<a
+				href="resources/gavril-ugo.38729/">Gavril Ugo</a>
+				<span class="version">Gavril Ugo 1.12</span>
+			</h3>
+			<div class="resourceDetails muted">
+				<a href="resources/authors/peanutz77.635551/">Peanutz77</a>, 
+				<a href="resources/gavril-ugo.38729/" class="faint"><span class="DateTime" title="Jul 28, 2026 at 1:55 PM">Jul 28, 2026</span></a>
+			</div>
+			<div class="tagLine">
+				
+					custom built golfcart with sport quad engine and suspension swap
+				
+			</div>
+		</div>
+	</div>
+	<div class="listBlock resourceStats">
+		<div class="listBlockInner">
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="4.42">
+					 <span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star "></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">4.41667</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint">12 ratings</span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<div class="pairsJustified">
+				
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>40,130</dd></dl>
+<dl class="resourceDownloads"><dt>Subscriptions:</dt> <dd>24,789</dd></dl>
+
+				<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="resources/gavril-ugo.38729/updates" class="concealed"><span class="DateTime" title="Sep 24, 2026 at 11:17 AM">Sep 24, 2026</span></a></dd></dl>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+			
+				<li class="resourceListItem visible " id="resource-39460">
+	<div class="listBlock resourceImage">
+		<div class="listBlockInner">
+			
+				<a href="resources/3-0l-turbo-diesel-autobello-stambecco.39460/" class="resourceIcon"><img src="data/resource_icons/39/39460.jpg?1789665654" alt="" /></a>
+				<a href="members/la_spicy.807082/" class="avatar Av807082s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/807/807082.jpg?1782744567" width="48" height="48" alt="la_spicy" /></a>
+			
+		</div>
+	</div>
+	<div class="listBlock main">
+		<div class="listBlockInner">
+			
+			
+			
+			
+			<h3 class="title">
+				
+				<a
+				href="resources/3-0l-turbo-diesel-autobello-stambecco.39460/">3.0L Turbo-Diesel Autobello Stambecco</a>
+				<span class="version">1.2f</span>
+			</h3>
+			<div class="resourceDetails muted">
+				<a href="resources/authors/la_spicy.807082/">la_spicy</a>, 
+				<a href="resources/3-0l-turbo-diesel-autobello-stambecco.39460/" class="faint"><span class="DateTime" title="Sep 23, 2026 at 3:05 PM">Sep 23, 2026</span></a>
+			</div>
+			<div class="tagLine">
+				
+					a newer and better 3.0l water cooled turbo diesel engine for the stambecco to replace the old 2.8l
+				
+			</div>
+		</div>
+	</div>
+	<div class="listBlock resourceStats">
+		<div class="listBlockInner">
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="5.00">
+					 <span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">5</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint">1 rating</span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<div class="pairsJustified">
+				
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>4,351</dd></dl>
+<dl class="resourceDownloads"><dt>Subscriptions:</dt> <dd>3,549</dd></dl>
+
+				<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="resources/3-0l-turbo-diesel-autobello-stambecco.39460/updates" class="concealed"><span class="DateTime" title="Sep 23, 2026 at 3:05 PM">Sep 23, 2026</span></a></dd></dl>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+			
+				<li class="resourceListItem visible " id="resource-38485">
+	<div class="listBlock resourceImage">
+		<div class="listBlockInner">
+			
+				<a href="resources/2020-civetta-scintilla-expansion-by-siagomods.38485/" class="resourceIcon"><img src="data/resource_icons/38/38485.jpg?1783092686" alt="" /></a>
+				<a href="members/veumods.807048/" class="avatar Av807048s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/807/807048.jpg?1782881212" width="48" height="48" alt="veumods" /></a>
+			
+		</div>
+	</div>
+	<div class="listBlock main">
+		<div class="listBlockInner">
+			
+			
+			
+			
+			<h3 class="title">
+				
+				<a href="resources/categories/land.3/?prefix_id=4" class="prefixLink" title="Show only resources prefixed by 'Beta'."><span class="prefix prefixWipBeta">Beta</span> </a><a
+				href="resources/2020-civetta-scintilla-expansion-by-siagomods.38485/">2020 Civetta Scintilla Expansion by siagomods</a>
+				<span class="version">2.0</span>
+			</h3>
+			<div class="resourceDetails muted">
+				<a href="resources/authors/veumods.807048/">veumods</a>, 
+				<a href="resources/2020-civetta-scintilla-expansion-by-siagomods.38485/" class="faint"><span class="DateTime" title="Jul 7, 2026 at 3:30 PM">Jul 7, 2026</span></a>
+			</div>
+			<div class="tagLine">
+				
+					The biggest Scintilla parts pack expansion to date.
+				
+			</div>
+		</div>
+	</div>
+	<div class="listBlock resourceStats">
+		<div class="listBlockInner">
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="4.00">
+					 <span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star "></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">4</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint">17 ratings</span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<div class="pairsJustified">
+				
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>95,520</dd></dl>
+<dl class="resourceDownloads"><dt>Subscriptions:</dt> <dd>49,011</dd></dl>
+
+				<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="resources/2020-civetta-scintilla-expansion-by-siagomods.38485/updates" class="concealed"><span class="DateTime" title="Sep 23, 2026 at 10:58 AM">Sep 23, 2026</span></a></dd></dl>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+			
+				<li class="resourceListItem visible " id="resource-39484">
+	<div class="listBlock resourceImage">
+		<div class="listBlockInner">
+			
+				<a href="resources/kvz-wagon.39484/" class="resourceIcon"><img src="data/resource_icons/39/39484.jpg?1789891779" alt="" /></a>
+				<a href="members/zagdima.38553/" class="avatar Av38553s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/38/38553.jpg?1534148590" width="48" height="48" alt="zagdima" /></a>
+			
+		</div>
+	</div>
+	<div class="listBlock main">
+		<div class="listBlockInner">
+			
+			
+			
+			
+			<h3 class="title">
+				
+				<a href="resources/categories/land.3/?prefix_id=4" class="prefixLink" title="Show only resources prefixed by 'Beta'."><span class="prefix prefixWipBeta">Beta</span> </a><a
+				href="resources/kvz-wagon.39484/">KVZ Wagon</a>
+				<span class="version">1.0</span>
+			</h3>
+			<div class="resourceDetails muted">
+				<a href="resources/authors/zagdima.38553/">zagdima</a>, 
+				<a href="resources/kvz-wagon.39484/" class="faint"><span class="DateTime" title="Sep 22, 2026 at 3:39 PM">Sep 22, 2026</span></a>
+			</div>
+			<div class="tagLine">
+				
+					Soviet Old Passenger Wagon
+				
+			</div>
+		</div>
+	</div>
+	<div class="listBlock resourceStats">
+		<div class="listBlockInner">
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="5.00">
+					 <span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">5</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint">5 ratings</span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<div class="pairsJustified">
+				
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>4,022</dd></dl>
+<dl class="resourceDownloads"><dt>Subscriptions:</dt> <dd>2,813</dd></dl>
+
+				<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="resources/kvz-wagon.39484/updates" class="concealed"><span class="DateTime" title="Sep 22, 2026 at 3:39 PM">Sep 22, 2026</span></a></dd></dl>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+			
+				<li class="resourceListItem visible " id="resource-24153">
+	<div class="listBlock resourceImage">
+		<div class="listBlockInner">
+			
+				<a href="resources/tanker-wagon.24153/" class="resourceIcon"><img src="data/resource_icons/24/24153.jpg?1665929798" alt="" /></a>
+				<a href="members/zagdima.38553/" class="avatar Av38553s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/38/38553.jpg?1534148590" width="48" height="48" alt="zagdima" /></a>
+			
+		</div>
+	</div>
+	<div class="listBlock main">
+		<div class="listBlockInner">
+			
+			
+			
+			
+			<h3 class="title">
+				
+				<a
+				href="resources/tanker-wagon.24153/">Tanker Wagon</a>
+				<span class="version">1.2</span>
+			</h3>
+			<div class="resourceDetails muted">
+				<a href="resources/authors/zagdima.38553/">zagdima</a>, 
+				<a href="resources/tanker-wagon.24153/" class="faint"><span class="DateTime" title="Oct 17, 2022 at 9:32 AM">Oct 17, 2022</span></a>
+			</div>
+			<div class="tagLine">
+				
+					Cistern or tanker wagon for trains in Beamng
+				
+			</div>
+		</div>
+	</div>
+	<div class="listBlock resourceStats">
+		<div class="listBlockInner">
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="4.85">
+					 <span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Half"></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">4.84615</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint">13 ratings</span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<div class="pairsJustified">
+				
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>84,116</dd></dl>
+<dl class="resourceDownloads"><dt>Subscriptions:</dt> <dd>36,775</dd></dl>
+
+				<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="resources/tanker-wagon.24153/updates" class="concealed"><span class="DateTime" title="Sep 22, 2026 at 3:39 PM">Sep 22, 2026</span></a></dd></dl>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+			
+				<li class="resourceListItem visible " id="resource-37280">
+	<div class="listBlock resourceImage">
+		<div class="listBlockInner">
+			
+				<a href="resources/rollback-extra-winch-tie-down-tow-hitch.37280/" class="resourceIcon"><img src="data/resource_icons/37/37280.jpg?1771633117" alt="" /></a>
+				<a href="members/astonishinga.3668/" class="avatar Av3668s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/3/3668.jpg?1444646843" width="48" height="48" alt="AstonishingA" /></a>
+			
+		</div>
+	</div>
+	<div class="listBlock main">
+		<div class="listBlockInner">
+			
+			
+			
+			
+			<h3 class="title">
+				
+				<a href="resources/categories/land.3/?prefix_id=4" class="prefixLink" title="Show only resources prefixed by 'Beta'."><span class="prefix prefixWipBeta">Beta</span> </a><a
+				href="resources/rollback-extra-winch-tie-down-tow-hitch.37280/">= Rollback Extra (Winch, Tie-down, Tow Hitch)</a>
+				<span class="version">2.1</span>
+			</h3>
+			<div class="resourceDetails muted">
+				<a href="resources/authors/astonishinga.3668/">AstonishingA</a>, 
+				<a href="resources/rollback-extra-winch-tie-down-tow-hitch.37280/" class="faint"><span class="DateTime" title="Feb 23, 2026 at 10:22 AM">Feb 23, 2026</span></a>
+			</div>
+			<div class="tagLine">
+				
+					An upgraded rollback for the H and D series that adds a working Winch or Tiedown Node and a Tow Hitc
+				
+			</div>
+		</div>
+	</div>
+	<div class="listBlock resourceStats">
+		<div class="listBlockInner">
+			
+
+
+	
+	<div class="rating">
+		<dl>
+			<dt class="prompt muted"></dt>
+			<dd>		
+				<span class="ratings" title="5.00">
+					 <span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span
+					><span class="star Full"></span>
+				</span>
+				
+				<span class="RatingValue"><span class="Number" itemprop="average">5</span>/<span itemprop="best">5</span>,</span>
+				<span class="Hint">2 ratings</span>
+			</dd>
+		</dl>	
+	</div>
+
+
+			<div class="pairsJustified">
+				
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>48,214</dd></dl>
+<dl class="resourceDownloads"><dt>Subscriptions:</dt> <dd>26,384</dd></dl>
+
+				<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="resources/rollback-extra-winch-tie-down-tow-hitch.37280/updates" class="concealed"><span class="DateTime" title="Sep 22, 2026 at 3:37 PM">Sep 22, 2026</span></a></dd></dl>
+			</div>
+		</div>
+	</div>
+</li>
+
+
+			
+		
+		</ol>
+		
+		<div class="pageNavLinkGroup">
+			
+		<div class="linkGroup" style="display: none"><a href="javascript:" class="muted jsOnly DisplayIgnoredContent Tooltip" title="Show hidden content by ">Show Ignored Content</a></div>
+		
+
+
+<div class="PageNav"
+	data-page="1"
+	data-range="2"
+	data-start="2"
+	data-end="6"
+	data-last="21"
+	data-sentinel="{{sentinel}}"
+	data-baseurl="resources/categories/land.3/?page=%7B%7Bsentinel%7D%7D">
+	
+	<span class="pageNavHeader">Page 1 of 21</span>
+	
+	<nav>
+		
+		
+		<a href="resources/categories/land.3/" class="currentPage " rel="start">1</a>
+		
+		
+			<a class="PageNavPrev hidden">&larr;</a> <span class="scrollable"><span class="items">
+		
+		
+		
+			<a href="resources/categories/land.3/?page=2" class="">2</a>
+		
+			<a href="resources/categories/land.3/?page=3" class="">3</a>
+		
+			<a href="resources/categories/land.3/?page=4" class="">4</a>
+		
+			<a href="resources/categories/land.3/?page=5" class="">5</a>
+		
+			<a href="resources/categories/land.3/?page=6" class="">6</a>
+		
+		
+		
+			</span></span> <a class="PageNavNext ">&rarr;</a>
+		
+		
+		<a href="resources/categories/land.3/?page=21" class="">21</a>
+		
+		
+			<a href="resources/categories/land.3/?page=2" class="text">Next &gt;</a>
+			
+		
+	</nav>	
+	
+	
+</div>
+
+		</div>
+	
+		
+	</form>
+	</div>
+</div>
+
+</div>
+						
+						
+						
+						
+							<!-- login form, to be moved to the upper drop-down -->
+							
+
+
+
+
+
+      
+
+
+<form action="login/login" method="post" class="xenForm eAuth" id="login" style="display:none">
+
+	
+		<ul id="eAuthUnit">
+			
+				
+				
+				
+				
+				
+				
+      
+      				
+               <li><a href="register/steam?reg=1" style="text-decoration:none;display: inline-block;">
+   <img src="styles/default/steamauth/steam_signin.png" alt="Log in with Steam" style="margin:0 14px;"/>
+</a></li>
+                
+    
+    
+				
+			
+		</ul>
+	
+
+	<div class="ctrlWrapper">
+		<dl class="ctrlUnit">
+			<dt><label for="LoginControl">Your name or email address:</label></dt>
+			<dd><input type="text" name="login" id="LoginControl" class="textCtrl" tabindex="101" /></dd>
+		</dl>
+	
+	
+		<dl class="ctrlUnit">
+			<dt>
+				<label for="ctrl_password">Do you already have an account?</label>
+			</dt>
+			<dd>
+				<ul>
+					<li><label for="ctrl_not_registered"><input type="radio" name="register" value="1" id="ctrl_not_registered" tabindex="105" />
+						No, create an account now.</label></li>
+					<li><label for="ctrl_registered"><input type="radio" name="register" value="0" id="ctrl_registered" tabindex="105" checked="checked" class="Disabler" />
+						Yes, my password is:</label></li>
+					<li id="ctrl_registered_Disabler">
+						<input type="password" name="password" class="textCtrl" id="ctrl_password" tabindex="102" />
+						<div class="lostPassword"><a href="lost-password/" class="OverlayTrigger OverlayCloser" tabindex="106">Forgot your password?</a></div>
+					</li>
+				</ul>
+			</dd>
+		</dl>
+	
+		
+		<dl class="ctrlUnit submitUnit">
+			<dt></dt>
+			<dd>
+				<input type="submit" class="button primary" value="Log in" tabindex="104" data-loginPhrase="Log in" data-signupPhrase="Sign up" />
+				<label for="ctrl_remember" class="rememberPassword"><input type="checkbox" name="remember" value="1" id="ctrl_remember" tabindex="103" /> Stay logged in</label>
+			</dd>
+		</dl>
+	</div>
+
+	<input type="hidden" name="cookie_check" value="1" />
+	<input type="hidden" name="redirect" value="/resources/categories/land.3/?order=last_update" />
+	<input type="hidden" name="_xfToken" value="" />
+
+</form>
+						
+						
+			
+				</div>
+			
+			
+			
+						
+				
+			
+			
+						
+			
+						
+			</div>
+	
+		</div>
+	</div>
+	
+</div>
+
+<footer>
+	
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+	
+		<div class="pageContent">
+			<div class="pageWidth">
+			
+				
+				
+				
+				
+				
+				<ul class="footerLinks">
+					
+						<li><a href="//www.beamng.com" class="homeLink">Home</a></li>
+
+<li><a href="//beamng.gmbh" class="">Company</a></li>
+<li><a href="//beamng.gmbh/team" class="">About us</a></li>
+
+						
+							<li><a href="https://support.beamng.com/" >Contact Us</a></li>
+						
+						<li><a href="help/">Help</a></li>
+					
+					
+						<li><a href="//beamng.com/game/support/policies/terms-of-service/">Terms and Rules</a></li>
+						<li><a href="//beamng.com/game/support/policies/privacy-policy/ ">Privacy Policy</a></li>
+					
+
+<li><a href="//beamng.com/imprint" class="">Impressum</a></li>
+
+					<li class="topLink"><a href="/resources/categories/land.3/?order=last_update#XenForo"><i class="uix_icon uix_icon-jumpToTop"></i> <span class="uix_hide">Top</span></a></li>
+				</ul>
+				
+				
+			
+			</div>
+			<span class="helper"></span>
+		</div>
+	
+</div>
+
+<div id="uix_stickyFooterSpacer"></div>
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+<div class="footerLegal">
+	
+		<div class="pageContent">
+			<div class="pageWidth">
+			<div id="copyright">
+				 
+				
+			</div>
+			
+			
+				<ul class="uix_socialMediaLinks">
+        <li class="rss"><a href="https://discord.gg/YKcSWAy" rel="alternate}" target="_blank"><img src="https://www.beamng.com/styles/uix/uix/discord.png" width="40" height="40"></a></li>
+	<li class="facebook"><a href="https://www.facebook.com/BeamNGPhysics" target="_blank"><i class="uix_icon uix_icon-facebook"></i></a></li>
+        <li class="twitter"><a href="https://twitter.com/beamng" target="_blank"><i class="uix_icon uix_icon-twitter"></i></a></li>
+        <li class="youtube"><a href="https://www.youtube.com/user/beamng" target="_blank"><i class="uix_icon uix_icon-youtube"></i></a></li>
+        
+        
+        
+        
+        
+        <li class="instagram"><a href="https://www.instagram.com/beamng.official/" target="_blank"><i class="uix_icon uix_icon-instagram"></i></a></li>
+        
+        <li class="steam"><a href="http://store.steampowered.com/app/284160/"><i class="uix_icon uix_icon-steam"></i></a></li>
+        
+        
+        
+        <li class="git"><a href="https://github.com/BeamNG/"><i class="uix_icon uix_icon-git"></i></a></li>
+        <li class="reddit"><a href="https://www.reddit.com/r/beamng"><i class="uix_icon uix_icon-reddit"></i></a></li>
+        
+        
+        <li class="contact"><a href="https://support.beamng.com/" target="_blank"><i class="uix_icon uix_icon-email"></i></a></li>
+        
+
+
+
+<!--ADD LIST ITEMS HERE -->
+
+
+
+        
+</ul>
+				
+			
+			<span class="helper"></span>
+		</div>
+	</div>	
+</div>
+
+
+
+</footer>
+
+<div class="bottomFixer">
+	
+	
+		
+		
+		
+		<div class="PanelScrollerOff Notices">
+			<div class="scrollContainer">
+				<div class="PanelContainer">
+					<ol class="Panels">
+						
+							<li class="panel Notice DismissParent notice_-1 " data-notice="-1">
+	
+	<div class="baseHtml noticeContent"><div class="noticeCookiesContent">
+	<div class="noticeCookiesContentRow">
+		This site uses cookies to help personalise content, tailor your experience and to keep you logged in if you register.<br />
+By continuing to use this site, you are consenting to our use of cookies.
+	</div>
+	
+	<div class="noticeCookiesContentRow noticeCookiesContentButtonRow">
+		<a href="account/dismiss-notice?notice_id=-1" class="button CustomDismissCtrl">Accept</a>
+		<a href="help/cookies" class="button">Learn More...</a>
+	</div>
+</div></div>
+	
+	
+		<a href="account/dismiss-notice?notice_id=-1"
+			title="Dismiss Notice" class="DismissCtrl Tooltip" data-offsetx="7" data-tipclass="flipped">Dismiss Notice</a>
+</li>
+						
+					</ol>
+				</div>
+			</div>
+		</div>
+	
+
+</div>
+
+<script>
+
+
+jQuery.extend(true, XenForo,
+{
+	visitor: { user_id: 0 },
+	serverTimeInfo:
+	{
+		now: 1791781526,
+		today: 1791756000,
+		todayDow: 1
+	},
+	_lightBoxUniversal: "0",
+	_enableOverlays: "1",
+	_animationSpeedMultiplier: "0",
+	_overlayConfig:
+	{
+		top: "10%",
+		speed: 0,
+		closeSpeed: 0,
+		mask:
+		{
+			color: "rgb(255, 255, 255)",
+			opacity: "0.6",
+			loadSpeed: 0,
+			closeSpeed: 0
+		}
+	},
+	_ignoredUsers: [],
+	_loadedScripts: {"nat_public_css":true,"resource_list":true,"action_filter_row":true,"resource_list_mini":true,"rating":true,"login_bar":true,"moderator_bar":true,"notices":true,"panel_scroller":true},
+	_cookieConfig: { path: "/", domain: "", prefix: "xf_"},
+	_csrfToken: "",
+	_csrfRefreshUrl: "login/csrf-token-refresh",
+	_jsVersion: "7ade89d5",
+	_noRtnProtect: false,
+	_noSocialLogin: false
+});
+jQuery.extend(XenForo.phrases,
+{
+	cancel: "Cancel",
+
+	a_moment_ago:    "A moment ago",
+	one_minute_ago:  "1 minute ago",
+	x_minutes_ago:   "%minutes% minutes ago",
+	today_at_x:      "Today at %time%",
+	yesterday_at_x:  "Yesterday at %time%",
+	day_x_at_time_y: "%day% at %time%",
+
+	day0: "Sunday",
+	day1: "Monday",
+	day2: "Tuesday",
+	day3: "Wednesday",
+	day4: "Thursday",
+	day5: "Friday",
+	day6: "Saturday",
+
+	_months: "January,February,March,April,May,June,July,August,September,October,November,December",
+	_daysShort: "Sun,Mon,Tue,Wed,Thu,Fri,Sat",
+
+	following_error_occurred: "The following error occurred",
+	server_did_not_respond_in_time_try_again: "The server did not respond in time. Please try again.",
+	logging_in: "Logging in",
+	click_image_show_full_size_version: "Click this image to show the full-size version.",
+	show_hidden_content_by_x: "Show hidden content by {names}"
+});
+
+// Facebook Javascript SDK
+XenForo.Facebook.appId = "";
+XenForo.Facebook.forceInit = false;
+
+
+
+
+
+
+
+
+
+
+
+
+	$('.navTabs .navTab.nodetab588 > a.navLink').attr('target', '_blank');
+
+
+
+
+	$('.navTabs .navTab.nodetab593 > a.navLink').attr('target', '_blank');
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</div> 
+<div class="uix_wrapperFix" style="height: 1px; margin-top: -1px;"></div>
+
+
+		</div> 
+	</div> 
+
+
+<script>
+
+</script>
+
+
+</body>
+</html>
